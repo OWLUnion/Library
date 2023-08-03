@@ -1,8 +1,4 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
 name: Deploy
-
 on:
   push:
     branches: [ "main" ]
@@ -14,27 +10,22 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v3
-    - name: Setup Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        node-version: latest
+        cache: 'pnpm'
     - name: Install Dependencies
       run: |
         cd Library
-        npm i
+        pnpm i
     - name: Build Site
-      run: npm run docs:build
+      run: pnpm run docs:build
     - name: Deploy
       env:
-        RSYNC_PWD: ${{ secrets.RSYNC_PASSWORD }}
+        RSYNC_PWD: ${{ vars.RSYNC_PASSWORD }}
       run: |
         echo $RSYNC_PWD > rsync.pwd
         sudo chmod 600 rsync.pwd
