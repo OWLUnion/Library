@@ -1,0 +1,26 @@
+{
+  "name": "vuepress-owl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
+    "deploy": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs && rm -rf /var/www/lib.kupars.top && cp docs/.vuepress/dist /var/www/lib.kupars.top -r"
+  },
+  "keywords": [],
+  "author": "AlexXuCN",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@vuepress/client": "2.0.0-beta.66",
+    "@vuepress/plugin-git": "2.0.0-beta.66",
+    "@vuepress/theme-default": "2.0.0-beta.66",
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-sidebar": "^0.0.9"
+  },
+  "devDependencies": {
+    "vue": "3.3.4",
+    "vuepress-plugin-copy-code2": "2.0.0-beta.234",
+    "vuepress-plugin-md-enhance": "2.0.0-beta.234"
+  }
+}
