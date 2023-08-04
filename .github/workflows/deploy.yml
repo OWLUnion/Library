@@ -31,5 +31,5 @@ jobs:
       run: |
         echo $RSYNC_PWD > rsync.pwd
         sudo chmod 600 rsync.pwd
-        rsync  --port=30004 -av --delete docs/.vuepress/dist githubactions@lib.kupars.top::owlLibrary --password-file=rsync.pwd          
+        rsync  --port=30004 -av --delete docs/.vuepress/dist/ githubactions@lib.kupars.top::owlLibrary --password-file=rsync.pwd          
 
