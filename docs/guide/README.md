@@ -244,19 +244,15 @@ XYZ公社
 
 ## 总览（部分名称中的"OWL"已省略）
 
-![世界旗](wi/世界旗.png) ![](RackMultipart20230804-1-50ssku_html_b321a134d0e687b.png) ![](RackMultipart20230804-1-50ssku_html_ab1b4e68c6c3b151.png)
+![世界旗](wi/世界旗.png) ![另一种世界旗](wi/另一种世界旗.png) ![渐变色超椭圆](wi/渐变色超椭圆.png)
 
-世界旗 另一种世界旗 渐变色超椭圆
-
-![](RackMultipart20230804-1-50ssku_html_8ab0146ed9df4600.png) ![](RackMultipart20230804-1-50ssku_html_cbd23f5d3aaaf7af.png) ![](RackMultipart20230804-1-50ssku_html_2eb24dd53fedba66.png)
-
-畅聊 渐变色圆 下雨的天空
+![畅聊](wi/畅聊.png) ![渐变色圆](wi/渐变色圆.png) ![下雨的天空](wi/下雨的天空.png)
 
 ## 世界旗
 
 ### 设计理念
 
-![](RackMultipart20230804-1-50ssku_html_e47aa1524a28e094.png)
+![世界旗](wi/世界旗.png)
 
 世界旗由三种颜色组成，分别是蓝色、白色和绿色，它们分别象征着天空、云和草地。我们认为，这三种明快的颜色来源于大自然，也是最能代表大自然的颜色。这三种颜色共同构成了一幅和平的自然图景，和谐、简约、自然而优雅。这符合"自由""开放""平等""互爱"的理念。同时，这三种颜色都能在Minecraft中找到。
 
@@ -268,7 +264,7 @@ OWL Square群头像、Minecraft中OWL旗帜、OWL政府公告、OWL周年定制�
 
 ### 设计理念
 
-![](RackMultipart20230804-1-50ssku_html_b321a134d0e687b.png)
+![另一种世界旗](wi/另一种世界旗.png)
 
 另一种世界旗在原版世界旗的基础上调整了旗帜颜色，使其更加庄重时尚，适用于一些特定场景。
 
@@ -280,7 +276,7 @@ OWL周年定制双面时尚帆布袋底部三色条纹、OWL周年定制抱枕�
 
 ### 设计理念
 
-![](RackMultipart20230804-1-50ssku_html_ab1b4e68c6c3b151.png)
+![渐变色超椭圆](wi/渐变色超椭圆.png)
 
 渐变色来自OWL主题色（蓝色和绿色），鲜明的渐变色象征着生动多元的OWL。超椭圆形状的灵感来源于小米Logo。我们认为超椭圆形状给人以灵动的生命感，简约且时尚。
 
@@ -292,7 +288,7 @@ OWL周年定制双面时尚帆布袋等。
 
 ### 设计理念
 
-![](RackMultipart20230804-1-50ssku_html_8ab0146ed9df4600.png)
+![畅聊](wi/畅聊.png)
 
 颜色采用OWL主题色，采用了简约的Material Design，表示玩家之间的交流。
 
@@ -304,8 +300,8 @@ OWL Chat群头像等。
 
 ### 设计理念
 
-![](RackMultipart20230804-1-50ssku_html_2c10172b42c9e36a.png)
-
+![渐变色圆](wi/渐变色圆.png)
+ 
 渐变色来自OWL主题色，优雅的渐变色象征着和谐多元的OWL。
 
 ### 应用场景
@@ -316,13 +312,13 @@ OWL政府群头像等。
 
 ### 设计理念
 
-![](RackMultipart20230804-1-50ssku_html_2eb24dd53fedba66.png)
+![下雨的天空](wi/下雨的天空.png)
 
 美丽的天空舒适、柔和、梦幻，代表着OWL Server、XYZ公社、Neko Dream和Laocao Server以及更多的服务器的平等、多元与和平。
 
 ### 应用场景
 
-United Servers群头像等。
+United Servers 群头像等。
 
 # OWL周年纪念品
 
