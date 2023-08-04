@@ -9,18 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install Node.js
-      uses: actions/setup-node@v3
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+    - uses: actions/setup-node@v3
       with:
         node-version: latest
-    - name: Cache
-      uses: actions/cache@v1.2.1
-      id: pnpm-cache
-    - uses: pnpm/action-setup@v2
-      name: Install pnpm
-      with:
-        run_install: false
-
+        cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
     - name: Build Site
