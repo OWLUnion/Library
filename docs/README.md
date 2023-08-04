@@ -1,14 +1,14 @@
 ---
 home: true
-heroImage: https://avatars.githubusercontent.com/u/141293947
-heroText: OWL Server
+heroImage: https://picst.sunbangyan.cn/2023/08/04/ixu2pp.png
+heroText: OWL Library
 tagline: Our Wild Land, Our Wonderful Love.
 sidebar: false
 actions:
-  - text: 阅读文档
+  - text: 百科全书
     type: primary 
     link: /guide/
-  - text: 添加服务器
+  - text: 加入 OWL Server
     type: secondary
     link: https://alexxu.eu.org/owl/add
 
