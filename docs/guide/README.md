@@ -2,7 +2,7 @@
 
 ### 什么是OWL Server
 
-OWL Server是一个自由、开放、平等、互爱的基岩版公益生存服务器。无正版验证，有 Xbox 成就，保留物品栏，拥有活跃的玩家商店以及完善的经济系统。[点击此处](https://www.minebbs.com/threads/owl-server.8223/)[了解更多](https://www.minebbs.com/threads/owl-server.8223/)。
+OWL Server是一个自由、开放、平等、互爱的基岩版公益生存服务器。无正版验证，有 Xbox 成就，保留物品栏，拥有活跃的玩家商店以及完善的经济系统。[点击此处了解更多](https://www.minebbs.com/threads/owl-server.8223/)。
 
 ### 标语
 
