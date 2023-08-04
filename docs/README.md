@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://picst.sunbangyan.cn/2023/08/04/ixu2pp.png
+heroImage: /世界旗.png
 heroText: OWL Library
 tagline: Our Wild Land, Our Wonderful Love.
 sidebar: false
