@@ -194,7 +194,7 @@ OWL Foundation是管理玩家捐款的OWL基金会。OWL Server的运行费用�
 
 如果您喜欢OWL Server，可以选择为我们捐款以便我们能够提供更好的游戏平台。资金捐赠明细和使用情况都会被公示。我们十分感谢您的支持！您的捐款将全部用于OWL Server服务器及域名的维护。一起让OWL Server变得更好吧！您可通过以下收款码来捐款：
 
-![](RackMultipart20230804-1-50ssku_html_4651fa8cef32f116.png)
+https://github.com/OWLUnion/Library/blob/main/docs/.vuepress/public/%E4%B8%8B%E9%9B%A8%E7%9A%84%E5%A4%A9%E7%A9%BA.png
 
 # OWL Store
 
@@ -244,7 +244,7 @@ XYZ公社
 
 ## 总览（部分名称中的"OWL"已省略）
 
-![](RackMultipart20230804-1-50ssku_html_e47aa1524a28e094.png) ![](RackMultipart20230804-1-50ssku_html_b321a134d0e687b.png) ![](RackMultipart20230804-1-50ssku_html_ab1b4e68c6c3b151.png)
+![世界旗](./世界旗.png) ![](RackMultipart20230804-1-50ssku_html_b321a134d0e687b.png) ![](RackMultipart20230804-1-50ssku_html_ab1b4e68c6c3b151.png)
 
 世界旗 另一种世界旗 渐变色超椭圆
 
