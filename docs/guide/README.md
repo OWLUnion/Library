@@ -244,7 +244,7 @@ XYZ公社
 
 ## 总览（部分名称中的"OWL"已省略）
 
-![世界旗](./世界旗.png) ![](RackMultipart20230804-1-50ssku_html_b321a134d0e687b.png) ![](RackMultipart20230804-1-50ssku_html_ab1b4e68c6c3b151.png)
+![世界旗](wi/世界旗.png) ![](RackMultipart20230804-1-50ssku_html_b321a134d0e687b.png) ![](RackMultipart20230804-1-50ssku_html_ab1b4e68c6c3b151.png)
 
 世界旗 另一种世界旗 渐变色超椭圆
 
