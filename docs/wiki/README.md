@@ -18,7 +18,7 @@ IP：kupars.top
 
 端口：19132
 
-若要加入 OWL Server 8th. 新周目不删档测试服，请点击 https://forms.office.com/r/gXFsddTrau来申请白名单。
+若要加入 OWL Server 8th. 新周目不删档测试服，请点击 https://forms.office.com/r/gXFsddTrau 来申请白名单。
 
 ## 如何使用插件及 Add-ons
 
