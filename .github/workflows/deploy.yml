@@ -27,7 +27,7 @@ jobs:
       run: pnpm run docs:build
     - name: Deploy
       env:
-        RSYNC_PWD: ${{ vars.RSYNC_PASSWORD }}
+        RSYNC_PWD: ${{ secrets.RSYNC_PASSWORD }}
       run: |
         echo $RSYNC_PWD > rsync.pwd
         sudo chmod 600 rsync.pwd
