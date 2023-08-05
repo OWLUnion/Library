@@ -12,5 +12,5 @@ actions:
     type: secondary
     link: https://alexxu.eu.org/owl/add
 
-footer: MIT Licensed | Copyright © 2023 OWL Union
+footer: MIT Licensed | Copyright © 2023-OWL Union
 ---
