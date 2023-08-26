@@ -5,9 +5,13 @@ import { defaultTheme } from '@vuepress/theme-default'
 //import themeSidebar from 'vuepress-theme-sidebar';
 
 import { readdirSync } from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 function autoSidebar (dir) {
-    var src = readdirSync("../../" + dir)
+    var src = readdirSync(path.resolve(__dirname, "..", dir))
     var out = []
     src.forEach(function(fileName){
         out.push("/" + dir + "/" + fileName)
