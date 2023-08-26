@@ -12,8 +12,9 @@ export default {
             {
                 text: 'Wiki',
                 link: '/wiki/',
-                collapsible: true/*,
-                children: [
+                collapsible: true,
+                children: 'auto'
+                /*children: [
                     {
                         text: '欢迎',
                         link: '/wiki/README.md'
@@ -36,17 +37,19 @@ export default {
                         text: '旗帜和图案',
                         link: '/wiki/flags-icons.md'
                     }
-                ]*/,
+                ]*/
             },
             {
                 collapsible: true,
                 text: '公告',
-                link: '/announcement/'
+                link: '/announcement/',
+                children: 'auto'
             },
             {
                 text: '资金明细',
                 link: '/finance/',
-                collapsible: true
+                collapsible: true,
+                children: 'auto'
             }
         ],
         nextLinks: true,
