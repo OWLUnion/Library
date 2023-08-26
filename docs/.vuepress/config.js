@@ -7,7 +7,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { readdirSync } from "fs"
 
 function autoSidebar (dir) {
-    var src = readdirSync("/docs/" + dir)
+    var src = readdirSync("../../" + dir)
     var out = []
     src.forEach(function(fileName){
         out.push("/" + dir + "/" + fileName)
