@@ -26,7 +26,7 @@ IP：kupars.top
 
 ## 物品被损坏或丢失怎么办
 
-您可以通过[https://forms.office.com/r/ugNPeKQwBg](https://forms.office.com/r/ugNPeKQwBg)来申请赔偿。在填写表单后，请通过QQ告诉[OWL政府](#OWL-%E6%94%BF%E5%BA%9C)。
+您可以通过<https://forms.office.com/r/ugNPeKQwBg>来申请赔偿。在填写表单后，请通过QQ告知OWL政府。
 
 ## 无法进入服务器怎么办
 

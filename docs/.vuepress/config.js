@@ -27,35 +27,9 @@ export default {
             {
                 text: 'Wiki',
                 link: '/wiki/',
-                collapsible: true,
                 children: autoSidebar("wiki")
-                /*children: [
-                    {
-                        text: '欢迎',
-                        link: '/wiki/README.md'
-                    },
-                    '/wiki/Add-ons.md',
-                    '/wiki/OWL-Chat.md',
-                    '/wiki/OWL-Foundation.md',
-                    '/wiki/OWL-Memories.md',
-                    '/wiki/OWL-Scenery.md',
-                    '/wiki/OWL-Security.md',
-                    '/wiki/OWL-Server.md',
-                    '/wiki/OWL-Square.md',
-                    '/wiki/OWL-Store.md',
-                    '/wiki/OWL-周年纪念品.md',
-                    '/wiki/OWL-和平会.md',
-                    '/wiki/OWL-政府.md',
-                    '/wiki/Robot-Galaxy.md',
-                    '/wiki/United-Servers.md',
-                    {
-                        text: '旗帜和图案',
-                        link: '/wiki/flags-icons.md'
-                    }
-                ]*/
             },
             {
-                collapsible: true,
                 text: '公告',
                 link: '/announcement/',
                 children: autoSidebar("announcement")
@@ -63,7 +37,6 @@ export default {
             {
                 text: '资金明细',
                 link: '/finance/',
-                collapsible: true,
                 children: autoSidebar("finance")
             }
         ],
