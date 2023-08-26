@@ -4,6 +4,17 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default'
 //import themeSidebar from 'vuepress-theme-sidebar';
 
+import { readdirSync } from "fs"
+
+function autoSidebar (dir) {
+    var src = readdirSync("/docs/" + dir)
+    var out = []
+    src.forEach(function(fileName){
+        out.push("/" + dir + "/" + fileName)
+    })
+    return out
+}
+
 export default {
     title: 'OWL Library',
     description: 'Welcome to OWL Library, where the documents are put out.',
@@ -13,7 +24,7 @@ export default {
                 text: 'Wiki',
                 link: '/wiki/',
                 collapsible: true,
-                children: 'auto'
+                children: autoSidebar("wiki")
                 /*children: [
                     {
                         text: '欢迎',
@@ -43,13 +54,13 @@ export default {
                 collapsible: true,
                 text: '公告',
                 link: '/announcement/',
-                children: 'auto'
+                children: autoSidebar("announcement")
             },
             {
                 text: '资金明细',
                 link: '/finance/',
                 collapsible: true,
-                children: 'auto'
+                children: autoSidebar("finance")
             }
         ],
         nextLinks: true,
