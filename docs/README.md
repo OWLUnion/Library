@@ -8,6 +8,12 @@ actions:
   - text: 百科全书
     type: primary 
     link: /wiki/
+  - text: 重要公告
+    type: secondary 
+    link: /announcement/
+  - text: 资金明细
+    type: secondary 
+    link: /finance/
   - text: 加入 OWL Server
     type: secondary
     link: https://alexxu.eu.org/owl/add
