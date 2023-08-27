@@ -20,6 +20,12 @@ function autoSidebar (dir) {
 }
 
 export default {
+    head: [
+      [
+        'link',
+        { rel: 'icon', href: 'assets/世界旗/0.png' }
+      ]
+    ],
     title: 'OWL Library',
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
