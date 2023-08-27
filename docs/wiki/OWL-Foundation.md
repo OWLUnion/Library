@@ -11,4 +11,4 @@ OWL Foundation 是管理玩家捐款的OWL基金会。OWL Server 的运行费用
 ![收款码](/assets/收款码.png)
 
 ## 资金明细
-[点击此处](https://lib.kupars.top/%E8%B5%84%E9%87%91%E6%98%8E%E7%BB%86/)来查看玩家捐款明细和资金使用情况。
+[点击此处](https://lib.kupars.top/finance/)来查看玩家捐款明细和资金使用情况。
