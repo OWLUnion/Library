@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /世界旗/0.png
+heroImage: /assets/世界旗/0.png
 heroText: OWL Library
 tagline: Our Wild Land, Our Wonderful Love.
 sidebar: true
