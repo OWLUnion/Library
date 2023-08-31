@@ -23,7 +23,7 @@ export default {
     head: [
       [
         'link',
-        { rel: 'icon', href: 'assets/世界旗/0.png' }
+        { rel: 'icon', href: 'assets/library.png' }
       ]
     ],
     title: 'OWL Library',
