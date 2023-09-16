@@ -12,13 +12,13 @@ Our Wild Land, Our Wonderful Love.
 
 ## 如何进入 OWL Server
 
-您可以使用以下IP和端口来进入 OWL Server 7th.
+您可以使用以下IP和端口来进入 OWL Server 8th.
 
 IP：kupars.top
 
 端口：19132
 
-若要加入 OWL Server 8th. 新周目不删档测试服，请点击 https://forms.office.com/r/gXFsddTrau 来申请白名单。
+OWL Server 7th. 目前仍不定期开启，您可在 OWL Square 群公告内查找进入方式。
 
 ## 如何使用插件及 Add-ons
 
