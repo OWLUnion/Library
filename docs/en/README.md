@@ -2,19 +2,19 @@
 home: true
 heroImage: /assets/世界旗/0.png
 heroText: OWL Library
-tagline: 自由，开放，平等，互爱。
+tagline: Our Wild Land, Our Wonderful Love.
 sidebar: true
 actions:
-  - text: 百科全书
+  - text: Wiki
     type: primary 
     link: /wiki/
-  - text: 重要公告
+  - text: Announcement
     type: secondary 
     link: /announcement/
-  - text: 资金明细
+  - text: Finance
     type: secondary 
     link: /finance/
-  - text: 加入 OWL Server
+  - text: Play OWL Server
     type: secondary
     link: https://alexxu.eu.org/owl/add
 
