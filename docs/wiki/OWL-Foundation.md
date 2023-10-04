@@ -2,7 +2,7 @@
 
 ## 什么是OWL Foundation
 
-OWL Foundation 是管理玩家捐款的OWL基金会。OWL Server 的运行费用皆出于 OWL Foundation。您可通过 OWL Square 群文件中的文档来查看玩家捐款详情及资金使用情况。
+OWL Foundation 是管理玩家捐款的OWL基金会。OWL Server 的运行费用皆出于 OWL Foundation。您可.[点击此处](https://lib.kupars.top/finance/)来查看玩家捐款详情及资金使用情况。
 
 ## 如何捐款
 
