@@ -28,7 +28,7 @@ export default {
     ],
     title: 'OWL Library',
     description: 'Welcome to OWL Library, where the documents are put out.',
-    theme: 'hope'({
+    theme: defaulTheme({
         sidebar: [
             {
                 text: 'Wiki',
