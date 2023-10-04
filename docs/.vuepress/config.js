@@ -1,7 +1,7 @@
 import { gitPlugin } from "@vuepress/plugin-git";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
-import { defaultTheme } from '@vuepress/theme-default'
+import { defaultTheme } from '@vuepress/theme-default';
 
 import { readdirSync } from "fs";
 import path from "path";
