@@ -28,7 +28,7 @@ export default {
     ],
     title: 'OWL Library',
     description: 'Welcome to OWL Library, where the documents are put out.',
-    theme: defaulTheme({
+    theme: defaultTheme({
         sidebar: [
             {
                 text: 'Wiki',
@@ -78,4 +78,7 @@ export default {
 
         })
   ]
+module.exports = {
+ theme: 'vuepress-theme-hope'
+}
 }
