@@ -1,22 +1,21 @@
 import { gitPlugin } from "@vuepress/plugin-git";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
-import { defaultTheme } from '@vuepress/theme-default'
-//import themeSidebar from 'vuepress-theme-sidebar';
+import { defaultTheme } from '@vuepress/theme-default';
 
-import { readdirSync } from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import { readdirSync } from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function autoSidebar (dir) {
-    var src = readdirSync(path.resolve(__dirname, "..", dir))
-    var out = []
+    var src = readdirSync(path.resolve(__dirname, "..", dir));
+    var out = [];
     src.forEach(function(fileName){
         out.push("/" + dir + "/" + fileName)
-    })
-    return out
+    });
+    return out;
 }
 
 export default {
@@ -74,9 +73,7 @@ export default {
             codetabs: true,
             card: true
         }),
-    copyCodePlugin({
-
-        })
+    copyCodePlugin({})
   ]
 }
 module.exports = {
