@@ -2,6 +2,7 @@ import { gitPlugin } from "@vuepress/plugin-git";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 import { readdirSync } from "fs";
 import path from "path";
@@ -87,6 +88,29 @@ export default {
             codetabs: true,
             card: true
         }),
-    copyCodePlugin({})
+    copyCodePlugin({}),
+    docsearchPlugin({
+      appId: '2HM9GWMXWD',
+      apiKey: 'c76cfa7049c88b719f377b4bea71a403',
+      indexName: 'lib-kupars',
+      locales: {
+        '/en/': {
+          placeholder: 'Search Documentation',
+          translations: {
+            button: {
+              buttonText: 'Search Documentation',
+            },
+          },
+        },
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档',
+            },
+          },
+        },
+      },
+    })
   ]
 }
