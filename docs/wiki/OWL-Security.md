@@ -1,7 +1,7 @@
-# 安全中心
+# OWL 安全中心
 
 # 概述
-OWL Security 是 OWL Server 的安全中心，旨在维护 OWL Server 底层安全。OWL Security 成员拥有 OWL Server 服务器后台访问权限。
+OWL 安全中心的建立旨在维护 OWL Server 底层安全。OWL 安全中心的成员拥有 OWL Server 服务器后台访问权限。
 
 # 成员
 * Kupars
