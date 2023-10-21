@@ -12,9 +12,15 @@ Our Wild Land, Our Wonderful Love.
 
 ## 如何进入 OWL Server
 
-您可以使用以下IP和端口来进入 OWL Server 8th.
+您可以使用以下IP和端口来进入 OWL Server 八周目
 
 IP：kupars.top
+
+端口：19132
+
+您可以使用以下IP和端口来进入 OWL Server 九周目
+
+IP：play.kupars.top
 
 端口：19132
 
@@ -84,3 +90,6 @@ OWL Server 的每个周目都分别只有一个地图，玩家们在同一个地
 ## 建筑转移
 OWL Server 支持建筑跨周目转移🏠
 如果您在其他周目里拥有令您自豪的建筑或机器，可以在 OWL Memories 存档中使用结构方块将它保存并导出文件，然后发送给我们，并申请在当前周目放置它。您转移的建筑在新周目将开放给所有玩家参观和使用。
+
+## 立场
+OWL Server 对所有非恶意服务器都有着平等、友好且开放的关系。OWL Server 致力于与各服务器共建良好的 Minecraft 游戏社区氛围，并通过无偿帮助新服务器成立与发展、无偿提供域名或服务器、开展 United Servers 多服联合小游戏活动、撰写公共文档等众多方式为社区建设做出力所能及的贡献。OWL Server 从来没有也绝对不会做出任何恶意行为。
