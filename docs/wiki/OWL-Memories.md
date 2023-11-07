@@ -1,12 +1,12 @@
 # OWL Memories
 
-## 什么是OWL Memories
+## 什么是 OWL Memories
 
 OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后，OWL Memories 还支持下载整个服务端。每一个周目结束后，我们都会将存档上传至云盘或 GitHub 以供下载。
 
 ## 下载方式
 
-### OWL Server一周目
+### OWL Server 一周目
 
 [GitHub](https://github.com/Kupars/owl/releases/download/OWL/OWL.Server.zip)  [Google 云端硬盘](https://drive.google.com/file/d/1a1JI70qdQ0Mf3XqJmjkBaILwd4X1wWUu/view?usp=drive_link)[OneDrive](https://1drv.ms/u/s!AoLQfFAZB-GPhPEGzc3tTdPN7U_bQw)  [百度网盘](https://pan.baidu.com/s/141WJGNantx4B3fES6SKe4A?pwd=1234)（提取码：1234）
 
