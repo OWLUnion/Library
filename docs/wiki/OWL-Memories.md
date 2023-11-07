@@ -18,10 +18,9 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 暂不支持下载。
 
-### OWL Server 5th.
+### OWL Server 5th. Created & Managed by Houti Government
 
-[OneDrive](https://1drv.ms/u/s!AoLQfFAZB-GPhaM-EE0ccilpqJAKqg)
-* OWL Server 5th. 由其他代理政府（Houti 政府）创建并管理，其政府领导者拒绝将包含玩家成果的存档公开，所以此处的存档仅包含主城。
+[OneDrive](https://1drv.ms/u/s!AoLQfFAZB-GPhaM-EE0ccilpqJAKqg)（仅包含主城）
 
 ### OWL Server 6th.
 
