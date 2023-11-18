@@ -111,8 +111,7 @@ OWL Foundation 以及 Kupars 感谢每一位玩家对 OWL Server 的支持。OWL
 
 # 财产归属
 
-与 OWL Server 相关的主要财产涉及 OWL Server 玩家成果、 OWL Foundation 资金、玩家间接资金支持和 Kupars 个人支出等四个方面。
-玩家在 OWL Server 的游戏成果受 OWL 安全中心保护，属玩家所有。
-OWL Foundation 的资金属于提供赞助的玩家本身，其财产归属按玩家累计赞助比率和赞助时间及赞助使用情况综合计算。OWL 安全中心在购买服务器及域名等方面对 OWL Foundation 的资金有合理的使用权。在一些情况中，OWL Foundation 的资金使用顺序可看作按赞助时间从早到晚的顺序，在暂时未被使用的部分中，玩家在 OWL Foundation 的赞助比率按赞助余额玩家剩余赞助个人占比来计算。在另一些情况中，玩家在 OWL Foundation 的赞助比率按其赞助总额占自 OWL Foundation 成立以来收到的累计赞助的比值来计算。这些比率在与 OWL Foundation 资金使用相关的投票时根据不同情况可视为投票权重。
+与 OWL Server 相关的资金财产涉及OWL Foundation 资金、玩家间接资金支持和 Kupars 个人支出等三个方面。
+OWL Foundation 的资金属于提供赞助的玩家本身，其财产归属按玩家累计赞助比率和赞助时间及赞助使用情况综合计算。OWL 安全中心在购买服务器及域名等方面对 OWL Foundation 的资金有合理的使用权。关于玩家资金比率，在一些情况中，OWL Foundation 的资金使用顺序可看作按赞助时间从早到晚的顺序，在暂时未被使用的部分中，玩家在 OWL Foundation 的赞助比率按赞助余额玩家剩余赞助个人占比来计算；在另一些情况中，玩家在 OWL Foundation 的赞助比率按其赞助总额占 OWL Foundation 累计赞助的比值来计算。这些比率在与 OWL Foundation 资金使用相关的投票时根据不同情况可视为投票权重。
 玩家间接资金支持指的是不属于 OWL Foundation 的玩家资金支持，包括提供服务器等。玩家提供的服务器属于玩家所有，OWL 安全中心有使用权。
 Kupars 为游戏活动进行的个人支出属于活动中的所有玩家，不属于 Kupars 个人。
