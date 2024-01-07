@@ -47,19 +47,19 @@ export default {
         sidebar: [
     {
         text: 'Wiki',
-        link: '/en/wiki/',
+        link: '/wiki/',
         collapsible: true,
         children: autoSidebar("wiki", $lang)
     },
     {
         text: '公告',
-        link: '/en/announcement/',
+        link: '/announcement/',
         collapsible: true,
         children: autoSidebar("announcement", $lang)
     },
     {
         text: '资金明细',
-        link: '/en/finance/',
+        link: '/finance/',
         collapsible: true,
         children: autoSidebar("finance", $lang)
     }
