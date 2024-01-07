@@ -24,7 +24,7 @@ export default {
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
-    "/zh/": {
+    "/": {
       lang: "zh-CN",
       title: "OWL Library",
       description: "Our Wild Land, Our Wonderful Love.",
@@ -45,22 +45,22 @@ export default {
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
         sidebar: {
-    '/zh/': [
+    '/': [
         {
             text: 'Wiki',
-            link: '/zh/wiki/',
+            link: '/wiki/',
             collapsible: true,
-            children: autoSidebar("wiki","zh")
+            children: autoSidebar("wiki")
         },
         {
             text: '公告',
-            link: '/zh/announcement/',
+            link: '/announcement/',
             collapsible: true,
             children: autoSidebar("announcement")
         },
         {
             text: '资金明细',
-            link: '/zh/finance/',
+            link: '/finance/',
             collapsible: true,
             children: autoSidebar("finance")
         }
