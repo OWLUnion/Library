@@ -10,13 +10,13 @@ actions:
     link: /en/wiki/
   - text: Announcement
     type: secondary 
-    link: /announcement/
+    link: /en/announcement/
   - text: Finance
     type: secondary 
-    link: /finance/
+    link: /en/finance/
   - text: Play OWL Server
     type: secondary
-    link: /play/
+    link: /en/play/
 
 footer: MIT Licensed | Copyright © 2023-OWL Union
 ---
