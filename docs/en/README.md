@@ -16,7 +16,7 @@ actions:
     link: /finance/
   - text: Play OWL Server
     type: secondary
-    link: https://alexxu.eu.org/owl/add
+    link: /play/
 
 footer: MIT Licensed | Copyright © 2023-OWL Union
 ---
