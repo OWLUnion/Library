@@ -1,25 +1,40 @@
 import { gitPlugin } from "@vuepress/plugin-git";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
-import { defaultTheme } from '@vuepress/theme-default'
-//import themeSidebar from 'vuepress-theme-sidebar';
+import { defaultTheme } from '@vuepress/theme-default';
+// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
-import { readdirSync } from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import { readdirSync } from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-function autoSidebar (dir) {
-    var src = readdirSync(path.resolve(__dirname, "..", dir))
-    var out = []
+function autoSidebar (dir, locale) {
+    var src = readdirSync(path.resolve(__dirname, "..", dir));
+    var out = [];
     src.forEach(function(fileName){
-        out.push("/" + dir + "/" + fileName)
-    })
-    return out
+        out.push("/" + locale + "/" + dir + "/" + fileName)
+    });
+    return out;
 }
 
+
 export default {
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    "/": {
+      lang: "zh-CN",
+      title: "OWL Library",
+      description: "Our Wild Land, Our Wonderful Love.",
+     },
+     "/en/": {
+      lang: "en-US",
+      title: "OWL Library",
+      description: "Our Wild Land, Our Wonderful Love.",
+    },
+  },
     head: [
       [
         'link',
@@ -32,21 +47,21 @@ export default {
         sidebar: [
             {
                 text: 'Wiki',
-                link: '/en/wiki/',
+                link: '/wiki/',
                 collapsible: true,
-                children: autoSidebar("wiki")
+                children: autoSidebar("wiki","en")
             },
             {
-                text: 'release',
-                link: '/en/announcement/',
+                text: '公告',
+                link: '/announcement/',
                 collapsible: true,
-                children: autoSidebar("announcement")
+                children: autoSidebar("announcement"，"en")
             },
             {
                 text: '资金明细',
                 link: '/finance/',
                 collapsible: true,
-                children: autoSidebar("finance")
+                children: autoSidebar("finance","en")
             }
         ],
         nextLinks: true,
@@ -74,8 +89,30 @@ export default {
             codetabs: true,
             card: true
         }),
-    copyCodePlugin({
-
-        })
+    copyCodePlugin({})
+    /*,
+    docsearchPlugin({
+      appId: '2HM9GWMXWD',
+      apiKey: 'c76cfa7049c88b719f377b4bea71a403',
+      indexName: 'lib-kupars',
+      locales: {
+        '/en/': {
+          placeholder: 'Search Documentation',
+          translations: {
+            button: {
+              buttonText: 'Search Documentation',
+            },
+          },
+        },
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档',
+            },
+          },
+        },
+      },
+    })*/
   ]
 }
