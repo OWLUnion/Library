@@ -26,7 +26,7 @@ export default {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     locales: {
     '/': {
-        lang: '简体中文',
+        lang: 'zh-CN',
         title: 'OWL Library',
         description: 'Our Wild Land, Our Wonderful Love.',
     },
