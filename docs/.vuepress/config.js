@@ -10,11 +10,11 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-function autoSidebar(dir, locale = "") {
+function autoSidebar(dir) {
     var src = readdirSync(path.resolve(__dirname, "..", dir));
     var out = [];
     src.forEach(function(fileName){
-        out.push("/" + (locale !== "" ? locale + "/" : "") + dir + "/" + fileName);
+        out.push("/" + dir + "/" + fileName);
     });
     return out;
 }
@@ -47,6 +47,14 @@ export default {
     title: 'OWL Library',
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
+        locales: {
+            '/': {
+                 selectLanguageName: '简体中文',
+            },
+            '/en/': {
+                 selectLanguageName: 'English',
+            },
+        },
         sidebar: {
     '/': [
         {
@@ -73,19 +81,19 @@ export default {
             text: 'Wiki',
             link: '/en/wiki/',
             collapsible: true,
-            children: autoSidebar("wiki","en")
+            children: autoSidebar("en/wiki")
         },
         {
             text: 'announcement',
             link: '/en/announcement/',
             collapsible: true,
-            children: autoSidebar("announcement","en")
+            children: autoSidebar("en/announcement")
         },
         {
             text: 'finance',
             link: '/en/finance/',
             collapsible: true,
-            children: autoSidebar("finance","en")
+            children: autoSidebar("en/finance")
         }
     ]
 },
