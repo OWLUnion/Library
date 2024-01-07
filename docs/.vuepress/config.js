@@ -44,26 +44,48 @@ export default {
     title: 'OWL Library',
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
-        sidebar: [
-    {
-        text: 'Wiki',
-        link: '/wiki/',
-        collapsible: true,
-        children: autoSidebar("wiki", $lang)
-    },
-    {
-        text: '公告',
-        link: '/announcement/',
-        collapsible: true,
-        children: autoSidebar("announcement", $lang)
-    },
-    {
-        text: '资金明细',
-        link: '/finance/',
-        collapsible: true,
-        children: autoSidebar("finance", $lang)
-    }
-],
+        sidebar: {
+    '/': [
+        {
+            text: 'Wiki',
+            link: '/wiki/',
+            collapsible: true,
+            children: autoSidebar("wiki", "zh-CN")
+        },
+        {
+            text: '公告',
+            link: '/announcement/',
+            collapsible: true,
+            children: autoSidebar("announcement", "zh-CN")
+        },
+        {
+            text: '资金明细',
+            link: '/finance/',
+            collapsible: true,
+            children: autoSidebar("finance", "zh-CN")
+        }
+    ],
+    '/en/': [
+        {
+            text: 'Wiki',
+            link: '/en/wiki/',
+            collapsible: true,
+            children: autoSidebar("wiki", "en-US")
+        },
+        {
+            text: '公告',
+            link: '/en/announcement/',
+            collapsible: true,
+            children: autoSidebar("announcement", "en-US")
+        },
+        {
+            text: '资金明细',
+            link: '/en/finance/',
+            collapsible: true,
+            children: autoSidebar("finance", "en-US")
+        }
+    ]
+},
         nextLinks: true,
         prevLinks: true,
         repo: 'OWLUnion/Library',
