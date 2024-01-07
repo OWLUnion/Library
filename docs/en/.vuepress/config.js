@@ -32,13 +32,13 @@ export default {
         sidebar: [
             {
                 text: 'Wiki',
-                link: '/wiki/',
+                link: '/en/wiki/',
                 collapsible: true,
                 children: autoSidebar("wiki")
             },
             {
-                text: '公告',
-                link: '/announcement/',
+                text: 'release',
+                link: '/en/announcement/',
                 collapsible: true,
                 children: autoSidebar("announcement")
             },
