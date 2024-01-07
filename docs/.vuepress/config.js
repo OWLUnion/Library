@@ -45,7 +45,7 @@ export default {
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
         sidebar: {
-    '/': [
+    '/zh/': [
         {
             text: 'Wiki',
             link: '/zh/wiki/',
