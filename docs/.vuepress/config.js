@@ -45,25 +45,25 @@ export default {
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
         sidebar: [
-            {
-                text: 'Wiki',
-                link: '/wiki/',
-                collapsible: true,
-                children: autoSidebar("wiki","en")
-            },
-            {
-                text: '公告',
-                link: '/announcement/',
-                collapsible: true,
-                children: autoSidebar("announcement","en")
-            },
-            {
-                text: '资金明细',
-                link: '/finance/',
-                collapsible: true,
-                children: autoSidebar("finance","en")
-            }
-        ],
+    {
+        text: 'Wiki',
+        link: '/wiki/',
+        collapsible: true,
+        children: autoSidebar("wiki", $lang)
+    },
+    {
+        text: '公告',
+        link: '/announcement/',
+        collapsible: true,
+        children: autoSidebar("announcement", $lang)
+    },
+    {
+        text: '资金明细',
+        link: '/finance/',
+        collapsible: true,
+        children: autoSidebar("finance", $lang)
+    }
+],
         nextLinks: true,
         prevLinks: true,
         repo: 'OWLUnion/Library',
