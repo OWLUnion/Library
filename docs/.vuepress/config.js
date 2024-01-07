@@ -10,11 +10,11 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-function autoSidebar (dir, locale) {
+function autoSidebar(dir, locale = "") {
     var src = readdirSync(path.resolve(__dirname, "..", dir));
     var out = [];
     src.forEach(function(fileName){
-        out.push("/" + locale + "/" + dir + "/" + fileName)
+        out.push("/" + (locale !== "" ? locale + "/" : "") + dir + "/" + fileName);
     });
     return out;
 }
