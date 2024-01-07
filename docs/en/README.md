@@ -7,7 +7,7 @@ sidebar: true
 actions:
   - text: Wiki
     type: primary 
-    link: /wiki/
+    link: /en/wiki/
   - text: Announcement
     type: secondary 
     link: /announcement/
