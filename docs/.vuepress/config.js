@@ -47,21 +47,21 @@ export default {
         sidebar: [
             {
                 text: 'Wiki',
-                link: '/wiki/',
+                link: '/en/wiki/',
                 collapsible: true,
-                children: autoSidebar("wiki","en")
+                children: autoSidebar("wiki")
             },
             {
                 text: '公告',
-                link: '/announcement/',
+                link: '/en/announcement/',
                 collapsible: true,
-                children: autoSidebar("announcement","en")
+                children: autoSidebar("announcement")
             },
             {
                 text: '资金明细',
-                link: '/finance/',
+                link: '/en/finance/',
                 collapsible: true,
-                children: autoSidebar("finance","en")
+                children: autoSidebar("finance")
             }
         ],
         nextLinks: true,
