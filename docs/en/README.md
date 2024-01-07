@@ -16,7 +16,7 @@ actions:
     link: /en/finance/
   - text: Play OWL Server
     type: secondary
-    link: /e/play/
+    link: /en/play/
 
 footer: MIT Licensed | Copyright © 2023-OWL Union
 ---
