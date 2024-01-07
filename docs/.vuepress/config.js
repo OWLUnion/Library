@@ -45,24 +45,24 @@ export default {
     description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
         sidebar: {
-    '/zh/': [
+    '/': [
         {
             text: 'Wiki',
-            link: '/zh/wiki/',
+            link: '/wiki/',
             collapsible: true,
-            children: autoSidebar("wiki","zh")
+            children: autoSidebar("wiki")
         },
         {
             text: '公告',
-            link: '/zh/announcement/',
+            link: '/announcement/',
             collapsible: true,
-            children: autoSidebar("announcement","zh")
+            children: autoSidebar("announcement")
         },
         {
             text: '资金明细',
-            link: '/zh/finance/',
+            link: '/finance/',
             collapsible: true,
-            children: autoSidebar("finance","zh")
+            children: autoSidebar("finance")
         }
     ],
     '/en/': [
@@ -73,13 +73,13 @@ export default {
             children: autoSidebar("wiki", "en")
         },
         {
-            text: '公告',
+            text: 'announcement',
             link: '/en/announcement/',
             collapsible: true,
             children: autoSidebar("announcement", "en")
         },
         {
-            text: '资金明细',
+            text: 'finance',
             link: '/en/finance/',
             collapsible: true,
             children: autoSidebar("finance", "en")
