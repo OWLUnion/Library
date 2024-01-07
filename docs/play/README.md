@@ -1,4 +1,5 @@
 ---
+sidebar: true
 actions:
   - text: OWL 9th
     type: primary 
