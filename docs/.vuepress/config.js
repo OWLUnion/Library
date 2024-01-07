@@ -48,19 +48,19 @@ export default {
     '/': [
         {
             text: 'Wiki',
-            link: '/wiki/',
+            link: '/zh/wiki/',
             collapsible: true,
-            children: autoSidebar("wiki","zh-CN")
+            children: autoSidebar("wiki","zh")
         },
         {
             text: '公告',
-            link: '/announcement/',
+            link: '/zh/announcement/',
             collapsible: true,
             children: autoSidebar("announcement")
         },
         {
             text: '资金明细',
-            link: '/finance/',
+            link: '/zh/finance/',
             collapsible: true,
             children: autoSidebar("finance")
         }
