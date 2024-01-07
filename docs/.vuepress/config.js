@@ -10,14 +10,15 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-function autoSidebar (dir) {
+function autoSidebar (dir, locale) {
     var src = readdirSync(path.resolve(__dirname, "..", dir));
     var out = [];
     src.forEach(function(fileName){
-        out.push("/" + dir + "/" + fileName)
+        out.push("/" + locale + "/" + dir + "/" + fileName)
     });
     return out;
 }
+
 
 export default {
   locales: {
@@ -46,21 +47,21 @@ export default {
         sidebar: [
             {
                 text: 'Wiki',
-                link: '/wiki/',
+                link: '/en/wiki/',
                 collapsible: true,
-                children: autoSidebar("wiki")
+                children: autoSidebar("wiki","en")
             },
             {
                 text: '公告',
-                link: '/announcement/',
+                link: '/en/announcement/',
                 collapsible: true,
-                children: autoSidebar("announcement")
+                children: autoSidebar("announcement","en")
             },
             {
                 text: '资金明细',
-                link: '/finance/',
+                link: '/en/finance/',
                 collapsible: true,
-                children: autoSidebar("finance")
+                children: autoSidebar("finance","en")
             }
         ],
         nextLinks: true,
