@@ -50,7 +50,7 @@ export default {
             text: 'Wiki',
             link: '/wiki/',
             collapsible: true,
-            children: autoSidebar("wiki")
+            children: autoSidebar("wiki","zh-CN")
         },
         {
             text: '公告',
