@@ -30,8 +30,14 @@ This project supports downloading the server.
 
 ### OWL Server 7th.
 
-Coming soon.
+[Baidu Netdisk](https://pan.baidu.com/s/1w4hDtWBrVoWijsr9WKIseQ?pwd=1234)（Extract Code：1234）  [Google Drive](https://drive.google.com/file/d/1xhFE-U_Co_u8m3_OQ8fD02MEeNF8l7JK/view?usp=sharing)
+
+This project supports downloading the server.
 
 ### OWL Server 8th.
 
-OWL Server 8th. is the current map.
+OWL Server 8th is the current week.
+
+### OWL Server 9th.
+
+OWL Server 9th is the current week.

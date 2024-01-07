@@ -14,4 +14,4 @@ Version:1.20.3x
 Version:1.18.12
 
 ### Archives of past weeks
-If you want to get the archives of past weeks,you can go to[OWL Memories](https://lib.kupars.top/wiki/OWL-Memories.html),[OWL Memories](https://lib.kupars.top/wiki/OWL-Memories.html) saves many archives of past weeks,you can find something that you need in here.
+If you want to get the archives of past weeks,you can go to[OWL Memories](https://lib.kupars.top/en/wiki/OWL-Memories.html),[OWL Memories](https://lib.kupars.top/en/wiki/OWL-Memories.html) saves many archives of past weeks,you can find something that you need in here.
