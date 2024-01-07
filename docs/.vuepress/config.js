@@ -21,7 +21,6 @@ function autoSidebar(dir, locale = "") {
 
 
 export default {
-  locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     locales: {
@@ -29,13 +28,16 @@ export default {
         lang: 'zh-CN',
         title: 'OWL Library',
         description: 'Our Wild Land, Our Wonderful Love.',
+        selectLanguageName: '语言' // 自定义中文语言选择器标签文本
     },
     '/en/': {
         lang: 'en-US',
         title: 'OWL Library',
         description: 'Our Wild Land, Our Wonderful Love.',
+        selectLanguageName: 'Languages' // 自定义英文语言选择器标签文本
     },
 },
+
     head: [
       [
         'link',
