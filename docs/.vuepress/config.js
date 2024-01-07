@@ -70,19 +70,19 @@ export default {
             text: 'Wiki',
             link: '/en/wiki/',
             collapsible: true,
-            children: autoSidebar("wiki", "en")
+            children: autoSidebar("wiki","en")
         },
         {
             text: 'announcement',
             link: '/en/announcement/',
             collapsible: true,
-            children: autoSidebar("announcement", "en")
+            children: autoSidebar("announcement","en")
         },
         {
             text: 'finance',
             link: '/en/finance/',
             collapsible: true,
-            children: autoSidebar("finance", "en")
+            children: autoSidebar("finance","en")
         }
     ]
 },
