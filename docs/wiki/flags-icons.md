@@ -66,7 +66,7 @@ OWL政府群头像等。
 
 ![下雨的天空](/assets/logo/下雨的天空.png)
 
-美丽的天空舒适、柔和、梦幻，代表着OWL Server、XY公社和Laocao Server以及更多的服务器的平等、多元与和平。
+美丽的天空舒适、柔和、梦幻，代表着 OWL Server、XYZ公社 和 Laocao Server 以及更多的服务器的平等、多元与和平。
 
 ### 应用场景
 
