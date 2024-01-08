@@ -28,13 +28,11 @@ export default {
         lang: 'zh-CN',
         title: 'OWL Library',
         description: 'Our Wild Land, Our Wonderful Love.',
-        selectLanguageName: '语言' // 自定义中文语言选择器标签文本
     },
     '/en/': {
         lang: 'en-US',
         title: 'OWL Library',
         description: 'Our Wild Land, Our Wonderful Love.',
-        selectLanguageName: 'Languages' // 自定义英文语言选择器标签文本
     },
 },
 
@@ -44,18 +42,13 @@ export default {
         { rel: 'icon', href: 'assets/logo/library.png' }
       ]
     ],
-    title: 'OWL Library',
-    description: 'Welcome to OWL Library, where the documents are put out.',
     theme: defaultTheme({
         locales: {
             '/': {
                  selectLanguageName: '简体中文',
-            },
-            '/en/': {
-                 selectLanguageName: 'English',
-            },
-        },
-        sidebar: {
+                 selectLanguageText: '选择语言',
+                 selectLanguageAriaLabel: '选择语言',
+                 sidebar: {
     '/': [
         {
             text: 'Wiki',
@@ -75,7 +68,15 @@ export default {
             collapsible: true,
             children: autoSidebar("finance")
         }
-    ],
+    ]
+
+                 }
+            },
+            '/en/': {
+                 selectLanguageName: 'English',
+                 selectLanguageText: 'Languages',
+                 selectLanguageAriaLabel: "Languages",
+                 sidebar: {
     '/en/': [
         {
             text: 'Wiki',
@@ -96,7 +97,10 @@ export default {
             children: autoSidebar("en/finance")
         }
     ]
-},
+
+                 }
+            },
+        },
         nextLinks: true,
         prevLinks: true,
         repo: 'OWLUnion/Library',
