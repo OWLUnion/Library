@@ -4,101 +4,81 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
-import { readdirSync } from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-function autoSidebar(dir) {
-    var src = readdirSync(path.resolve(__dirname, "..", dir));
-    var out = [];
-    src.forEach(function(fileName){
-        out.push("/" + dir + "/" + fileName);
-    });
-    return out;
-}
+import autoSidebar from "./utils/autoSidebar.js"
 
 
 export default {
-    // 键名是该语言所属的子路径
-    // 作为特例，默认语言可以使用 '/' 作为其路径。
     locales: {
-    '/': {
-        lang: 'zh-CN',
-        title: 'OWL Library',
-        description: 'Our Wild Land, Our Wonderful Love.',
+        '/': {
+            lang: 'zh-CN',
+            title: 'OWL Library',
+            description: 'Our Wild Land, Our Wonderful Love.',
+        },
+        '/en/': {
+            lang: 'en-US',
+            title: 'OWL Library',
+            description: 'Our Wild Land, Our Wonderful Love.',
+        },
     },
-    '/en/': {
-        lang: 'en-US',
-        title: 'OWL Library',
-        description: 'Our Wild Land, Our Wonderful Love.',
-    },
-},
 
     head: [
       [
         'link',
-        { rel: 'icon', href: 'assets/logo/library.png' }
+            { rel: 'icon', href: 'assets/logo/library.png' }
       ]
     ],
     theme: defaultTheme({
         locales: {
             '/': {
-                 selectLanguageName: '简体中文',
-                 selectLanguageText: '选择语言',
-                 selectLanguageAriaLabel: '选择语言',
-                 sidebar: {
-    '/': [
-        {
-            text: 'Wiki',
-            link: '/wiki/',
-            collapsible: true,
-            children: autoSidebar("wiki")
-        },
-        {
-            text: '公告',
-            link: '/announcement/',
-            collapsible: true,
-            children: autoSidebar("announcement")
-        },
-        {
-            text: '资金明细',
-            link: '/finance/',
-            collapsible: true,
-            children: autoSidebar("finance")
-        }
-    ]
+                selectLanguageName: '简体中文',
+                selectLanguageText: '选择语言',
+                selectLanguageAriaLabel: '选择语言',
+                sidebar: [
+                    {
+                        text: 'Wiki',
+                        link: '/wiki/',
+                        collapsible: true,
+                        children: autoSidebar("wiki")
 
-                 }
+                        },
+                    {
+                        text: '公告',
+                        link: '/announcement/',
+                        collapsible: true,
+                        children: autoSidebar("announcement")
+                        },
+                    {
+                        text: '资金明细',
+                        link: '/finance/',
+                        collapsible: true,
+                        children: autoSidebar("finance")
+                        }
+                    ]
             },
             '/en/': {
-                 selectLanguageName: 'English',
-                 selectLanguageText: 'Languages',
-                 selectLanguageAriaLabel: "Languages",
-                 sidebar: {
-    '/en/': [
-        {
-            text: 'Wiki',
-            link: '/en/wiki/',
-            collapsible: true,
-            children: autoSidebar("en/wiki")
-        },
-        {
-            text: 'announcement',
-            link: '/en/announcement/',
-            collapsible: true,
-            children: autoSidebar("en/announcement")
-        },
-        {
-            text: 'finance',
-            link: '/en/finance/',
-            collapsible: true,
-            children: autoSidebar("en/finance")
-        }
-    ]
-
-                 }
+                selectLanguageName: 'English',
+                selectLanguageText: 'Languages',
+                selectLanguageAriaLabel: "Languages",
+                sidebar: [
+                    {
+                        text: 'Wiki',
+                        link: '/en/wiki/',
+                        collapsible: true,
+                        children: autoSidebar("en/wiki")
+                        },
+                    {
+                        text: 'announcement',
+                        link: '/en/announcement/',
+                        collapsible: true,
+                        children: autoSidebar("en/announcement")
+                        },
+                    {
+                        text: 'finance',
+                        link: '/en/finance/',
+                        collapsible: true,
+                        children: autoSidebar("en/finance")
+                        }
+                    ]
             },
         },
         nextLinks: true,
