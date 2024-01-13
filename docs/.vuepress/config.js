@@ -67,11 +67,7 @@ export default {
             '/en/': {
                 selectLanguageName: 'English',
                 selectLanguageText: 'Languages',
-                selectLanguageAriaLabel: "Languages",                    {
-                        text: '资金明细',
-                        link: '/finance/',
-                        collapsible: true
-                        }
+                selectLanguageAriaLabel: "Languages",
                 sidebar: [
                     {
                         text: 'Wiki',
