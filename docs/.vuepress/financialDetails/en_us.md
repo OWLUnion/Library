@@ -4,66 +4,7 @@
 
 OWL Foundation is a platform for managing players. Since the OWL government opened the sponsorship channel in November 2022, the OWL Foundation has successively received sponsorship from many players, for which we are deeply grateful. All funds sponsored by players will be used to build OWL Server. The following is the player sponsorship details and fund usage as of August 3, 2023. The player with an unknown name has been replaced with an incomplete name on the payment page. If the name or payment is incorrect, please contact us.
 
-### Player sponsorship details
-
-We received a total of $454.01 in sponsorship.
-
-#### 2023
-##### August
-| 玩家名称| 赞助金额 (CNY)  | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| Nevevolpe | 66.00 | 3日  |
-
-##### July
-| 玩家名称| 赞助金额 (CNY)  | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| 蛋神教教主 | 5.00 | 29日  |
-
-##### May
-| 玩家名称| 赞助金额 (CNY)  | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| mcxiaohao | 10.00 | 5日  |
-| mcxiaohao | 10.00 | 13日  |
-| jiapuludeng | 10.00 | 20日  |
-
-##### April
-| 玩家名称| 赞助金额 (CNY)  | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| mcxiaohao | 15.00 | 5日  |
-| mcxiaohao | 10.00 | 15日  |
-| mcxiaohao | 10.00 | 21日  |
-| Suejdow31 | 10.00 | 22日  |
-| mcxiaohao | 10.00 | 24日  |
-| mcxiaohao | 10.00 | 25日  |
-
-##### March
-| 玩家名称| 赞助金额 (CNY)  | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| Nevevolpe | 100.00 | 12日  |
-| *飷 | 0.01 | 28日  |
-| mcxiaohao | 5.00 | 28日  |
-
-##### January
-| 玩家名称| 赞助金额 (CNY)  | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| Siaospeed | 1.00 | 12日  |
-| KNwither3599 | 11.45 | 15日  |
-| KNwither3599 | 11.45 | 21日  |
-| jiapuludeng | 11.45 | 21日  |
-| laok233 | 100.00 | 26日  |
-
-#### 2022
-##### November
-| 玩家名称| 赞助金额 (CNY)   | 赞助日期 |
-|  :----:  | :----:  | :----: |
-| ZhuShu1225  | 14.51 | 24日至26日 |
-| KNwither3599  | 16.14|27日|
-| chen雪杨 | 0.45 | 27日  |
-| GloatingDaisy33 | 7.00 | 27日  |
-| jiapuludeng | 10.00 | 27日  |
-| X*i | 5.00 | 27日  |
-| l*e | 6.00 | 28日  |
-
+%%%details%%%
 
 ### Sponsorship usage details
 

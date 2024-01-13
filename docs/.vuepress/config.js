@@ -4,101 +4,79 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
-import { readdirSync } from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-function autoSidebar(dir) {
-    var src = readdirSync(path.resolve(__dirname, "..", dir));
-    var out = [];
-    src.forEach(function(fileName){
-        out.push("/" + dir + "/" + fileName);
-    });
-    return out;
-}
+import financialDetailsPlugin from "./utils/financialDetails.js"
+import autoSidebar from "./utils/autoSidebar.js"
 
 
 export default {
-    // 键名是该语言所属的子路径
-    // 作为特例，默认语言可以使用 '/' 作为其路径。
     locales: {
-    '/': {
-        lang: 'zh-CN',
-        title: 'OWL Library',
-        description: 'Our Wild Land, Our Wonderful Love.',
+        '/': {
+            lang: 'zh-CN',
+            title: 'OWL Library',
+            description: 'Our Wild Land, Our Wonderful Love.',
+        },
+        '/en/': {
+            lang: 'en-US',
+            title: 'OWL Library',
+            description: 'Our Wild Land, Our Wonderful Love.',
+        },
     },
-    '/en/': {
-        lang: 'en-US',
-        title: 'OWL Library',
-        description: 'Our Wild Land, Our Wonderful Love.',
-    },
-},
-
     head: [
       [
         'link',
-        { rel: 'icon', href: 'assets/logo/library.png' }
+            { rel: 'icon', href: 'assets/logo/library.png' }
       ]
     ],
     theme: defaultTheme({
         locales: {
             '/': {
-                 selectLanguageName: '简体中文',
-                 selectLanguageText: '选择语言',
-                 selectLanguageAriaLabel: '选择语言',
-                 sidebar: {
-    '/': [
-        {
-            text: 'Wiki',
-            link: '/wiki/',
-            collapsible: true,
-            children: autoSidebar("wiki")
-        },
-        {
-            text: '公告',
-            link: '/announcement/',
-            collapsible: true,
-            children: autoSidebar("announcement")
-        },
-        {
-            text: '资金明细',
-            link: '/finance/',
-            collapsible: true,
-            children: autoSidebar("finance")
-        }
-    ]
+                selectLanguageName: '简体中文',
+                selectLanguageText: '选择语言',
+                selectLanguageAriaLabel: '选择语言',
+                sidebar: [
+                    {
+                        text: 'Wiki',
+                        link: '/wiki/',
+                        collapsible: true,
+                        children: autoSidebar("wiki")
 
-                 }
+                        },
+                    {
+                        text: '公告',
+                        link: '/announcement/',
+                        collapsible: true,
+                        children: autoSidebar("announcement")
+                        },
+                    {
+                        text: '资金明细',
+                        link: '/finance/',
+                        collapsible: true
+                        }
+                    ]
             },
             '/en/': {
-                 selectLanguageName: 'English',
-                 selectLanguageText: 'Languages',
-                 selectLanguageAriaLabel: "Languages",
-                 sidebar: {
-    '/en/': [
-        {
-            text: 'Wiki',
-            link: '/en/wiki/',
-            collapsible: true,
-            children: autoSidebar("en/wiki")
-        },
-        {
-            text: 'announcement',
-            link: '/en/announcement/',
-            collapsible: true,
-            children: autoSidebar("en/announcement")
-        },
-        {
-            text: 'finance',
-            link: '/en/finance/',
-            collapsible: true,
-            children: autoSidebar("en/finance")
-        }
-    ]
-
-                 }
+                selectLanguageName: 'English',
+                selectLanguageText: 'Languages',
+                selectLanguageAriaLabel: "Languages",
+                sidebar: [
+                    {
+                        text: 'Wiki',
+                        link: '/en/wiki/',
+                        collapsible: true,
+                        children: autoSidebar("en/wiki")
+                        },
+                    {
+                        text: 'announcement',
+                        link: '/en/announcement/',
+                        collapsible: true,
+                        children: autoSidebar("en/announcement")
+                        },
+                    {
+                        text: 'finance',
+                        link: '/en/finance/',
+                        collapsible: true
+                        }
+                    ]
             },
         },
         nextLinks: true,
@@ -113,12 +91,12 @@ export default {
         colorModeSwitch: true
     }),
     plugins: [
-    gitPlugin({
+        gitPlugin({
             createdTime: false,
             updatedTime: true,
             contributors: true
         }),
-    mdEnhancePlugin({
+        mdEnhancePlugin({
             gfm: true,
             presentation: true,
             container: true,
@@ -126,30 +104,35 @@ export default {
             codetabs: true,
             card: true
         }),
-    copyCodePlugin({})
-    /*,
-    docsearchPlugin({
-      appId: '2HM9GWMXWD',
-      apiKey: 'c76cfa7049c88b719f377b4bea71a403',
-      indexName: 'lib-kupars',
-      locales: {
-        '/en/': {
-          placeholder: 'Search Documentation',
-          translations: {
-            button: {
-              buttonText: 'Search Documentation',
+        copyCodePlugin({}),
+        financialDetailsPlugin({
+            locales: {
+                "/": {
+                    template: "/.vuepress/financialDetails/zh_cn.md",
+                    path: "/finance/",
+                    chapterTitle: "### 玩家赞助明细",
+                    summary: ["我们共收到了 ", " 元赞助。"],
+                    month: "月",
+                    year: "年",
+                    day: "日",
+                    playerName: "玩家名称",
+                    amount: "赞助金额 (CNY)",
+                    date: "赞助日期"
+                },
+                "/en/": {
+                    template: "/.vuepress/financialDetails/en_us.md",
+                    path: "/en/finance",
+                    chapterTitle: "### Sponsorship Details",
+                    summary: ["We received a total of ¥", " (CNY) in sponsorship."],
+                    month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                    year: "",
+                    day: "",
+                    playerName: "Sponsor",
+                    amount: "Amount (CNY)",
+                    date: "Day of the Month"
+                }
             },
-          },
-        },
-        '/': {
-          placeholder: '搜索文档',
-          translations: {
-            button: {
-              buttonText: '搜索文档',
-            },
-          },
-        },
-      },
-    })*/
-  ]
+            data: "/.vuepress/financialDetails/data.toml"
+        })
+    ]
 }
