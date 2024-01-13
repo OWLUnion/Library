@@ -47,8 +47,16 @@ const config = {
 */
 
 function centToYuan(cent) {
-    let str = cent.toString()
-    return str.slice(0, -2) + "." + str.slice(-2)
+    let centStr = cent.toString()
+    switch (centStr.length) {
+        case 1:
+            return "0.0" + centStr
+        case 2:
+            return "0." + centStr
+        default:
+            return centStr.slice(0, -2) + "." + centStr.slice(-2)
+    }
+
 }
 
 function createDetails(data, i18n) {
@@ -60,7 +68,7 @@ function createDetails(data, i18n) {
     for (let year of hillSort(Object.keys(data))) {
         let monthResults = []
         for (let month of hillSort(Object.keys(data[year]))) {
-            let monthResult = "##### " + nonNumericalMonth ? i18n.month[month - 1] : month + i18n.month + `\n| ${i18n.playerName} | ${i18n.amount}  | ${i18n.date} |\n|  :----:  | :----:  | :----: |\n`
+            let monthResult = "##### " + (nonNumericalMonth ? i18n.month[month - 1] : month + i18n.month) + `\n| ${i18n.playerName} | ${i18n.amount}  | ${i18n.date} |\n|  :----:  | :----:  | :----: |\n`
             for (let entry of data[year][month]) {
                 monthResult += `| ${entry.name} | ${centToYuan(entry.amount)} | ${entry.day} |\n`
                 sum += entry.amount
