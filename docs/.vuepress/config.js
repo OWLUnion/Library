@@ -51,13 +51,27 @@ export default {
                         text: '资金明细',
                         link: '/finance/',
                         collapsible: true
+                        },
+                    {
+                        text: '加入服务器',
+                        link: '/play/',
+                        collapsible: true
+                        },
+                    {
+                        text: '首页',
+                        link: '/',
+                        collapsible: false
                         }
                     ]
             },
             '/en/': {
                 selectLanguageName: 'English',
                 selectLanguageText: 'Languages',
-                selectLanguageAriaLabel: "Languages",
+                selectLanguageAriaLabel: "Languages",                    {
+                        text: '资金明细',
+                        link: '/finance/',
+                        collapsible: true
+                        }
                 sidebar: [
                     {
                         text: 'Wiki',
@@ -75,6 +89,16 @@ export default {
                         text: 'finance',
                         link: '/en/finance/',
                         collapsible: true
+                        },
+                    {
+                        text: 'Join Server',
+                        link: '/en/play/',
+                        collapsible: true
+                        },
+                    {
+                        text: 'Homepage',
+                        link: '/en/',
+                        collapsible: false
                         }
                     ]
             },
