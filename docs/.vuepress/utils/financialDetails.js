@@ -1,10 +1,10 @@
 import { parse } from "toml"
 
-function hillSort(arr: any[]): any[] {
-  for(let gap: number = parseInt(arr.length/2); gap > 0 ; gap = parseInt(gap/2)){
-    for(let i: number = gap ; i < arr.length ; i++){
-      let preIndex: number = i-gap;
-      let current: number = arr[i]
+function hillSort(arr) {
+  for(let gap = parseInt(arr.length/2); gap > 0 ; gap = parseInt(gap/2)){
+    for(let i = gap ; i < arr.length ; i++){
+      let preIndex = i-gap;
+      let current = arr[i]
       while(preIndex >=0 && current < arr[preIndex]){
           arr[preIndex + gap] = arr[preIndex]
           preIndex -= gap;
@@ -27,20 +27,20 @@ const i18n = {
 }
 */
 
-function centToYuan(cent: number): string {
-    let str: string = cent.toString()
+function centToYuan(cent) {
+    let str = cent.toString()
     return str.slice(0,-2) + "." + str.slice(-2)
 }
 
-function financialDetails (data: string, i18n: any): string {
-    data = <any> parse(data)
-    let textResult: string[] = []
-    let sum: number = 0
+function financialDetails (data, i18n) {
+    data = parse(data)
+    let textResult = []
+    let sum = 0
 
-    for ( let year: string of hillSort(Object.keys(data)) ) {
+    for ( let year of hillSort(Object.keys(data)) ) {
         let monthResults = []
-        for (let month: string of hillSort(Object.keys(data[year]))) {
-            let monthResult: string = `##### ${month}${i18n.month}\n| ${i18n.playerName} | ${i18n.amount}  | ${i18n.date} |\n|  :----:  | :----:  | :----: |\n`
+        for (let month of hillSort(Object.keys(data[year]))) {
+            let monthResult = `##### ${month}${i18n.month}\n| ${i18n.playerName} | ${i18n.amount}  | ${i18n.date} |\n|  :----:  | :----:  | :----: |\n`
             for (let entry of data[year][month]) {
                 monthResult += `| ${entry.name} | ${centToYuan(entry.amount)} | ${entry.day} |\n`
                 sum += entry.amount

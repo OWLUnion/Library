@@ -20,7 +20,6 @@ export default {
             description: 'Our Wild Land, Our Wonderful Love.',
         },
     },
-
     head: [
       [
         'link',
