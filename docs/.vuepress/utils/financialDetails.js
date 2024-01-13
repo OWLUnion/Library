@@ -77,16 +77,18 @@ function createDetails(data, i18n) {
 }
 
 const financialDetailsPlugin = (options) => {
-    return {
-        name: 'financialDetails',
-        onInitialized: async (app) => {
-            let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" }).toString("utf-8")
-            for (let lang in options.locales) {
-                let page = await createPage(app, {
-                    path: options.locales[lang]    .path,
-                    content: (await readFile(app.dir.source() + options.locales[lang].template), { encoding: "utf-8" }).toString("utf-8").replace(String.raw`%%%details%%%`, createDetails(data, options.locales[lang]))
-                })
-                app.pages.push(page)
+    return (app) => {
+        return {
+            name: 'financialDetails',
+            onInitialized: async (app) => {
+                let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" }).toString("utf-8")
+                for (let lang in options.locales) {
+                    let page = await createPage(app, {
+                        path: options.locales[lang].path,
+                        content: (await readFile(app.dir.source() + options.locales[lang].template), { encoding: "utf-8" }).toString("utf-8").replace(String.raw`%%%details%%%`, createDetails(data, options.locales[lang]))
+                    })
+                    app.pages.push(page)
+                }
             }
         }
     }
