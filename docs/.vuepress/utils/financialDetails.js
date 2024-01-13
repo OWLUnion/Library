@@ -92,4 +92,4 @@ const financialDetailsPlugin = (options) => {
     }
 }
 
-export default { financialDetailsPlugin }
+export default financialDetailsPlugin

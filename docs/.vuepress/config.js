@@ -4,7 +4,7 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
-import { financialDetailsPlugin } from "./utils/financialDetails.js"
+import financialDetailsPlugin from "./utils/financialDetails.js"
 import autoSidebar from "./utils/autoSidebar.js"
 
 
@@ -134,29 +134,5 @@ export default {
             },
             data: "/.vuepress/financialDetails/data.toml"
         })
-    /*,
-    docsearchPlugin({
-      appId: '2HM9GWMXWD',
-      apiKey: 'c76cfa7049c88b719f377b4bea71a403',
-      indexName: 'lib-kupars',
-      locales: {
-        '/en/': {
-          placeholder: 'Search Documentation',
-          translations: {
-            button: {
-              buttonText: 'Search Documentation',
-            },
-          },
-        },
-        '/': {
-          placeholder: '搜索文档',
-          translations: {
-            button: {
-              buttonText: '搜索文档',
-            },
-          },
-        },
-      },
-    })*/
-  ]
+    ]
 }
