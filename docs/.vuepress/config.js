@@ -114,6 +114,7 @@ export default {
                     summary: ["我们共收到了 ", " 元赞助。"],
                     month: "月",
                     year: "年",
+                    day: "日",
                     playerName: "玩家名称",
                     amount: "赞助金额 (CNY)",
                     date: "赞助日期"
@@ -122,12 +123,13 @@ export default {
                     template: "/.vuepress/financialDetails/en_us.md",
                     path: "/en/finance",
                     chapterTitle: "### Sponsorship Details",
-                    summary: ["我们共收到了 ", " 元赞助。"],
+                    summary: ["We received a total of ¥", " (CNY) in sponsorship."],
                     month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                     year: "",
+                    day: "",
                     playerName: "Sponsor",
-                    amount: "赞助金额 (CNY)",
-                    date: "赞助日期"
+                    amount: "Amount (CNY)",
+                    date: "Day of the Month"
                 }
             },
             data: "/.vuepress/financialDetails/data.toml"

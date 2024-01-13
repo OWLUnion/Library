@@ -16,35 +16,6 @@ function hillSort(arr) {
     }
     return arr
 }
-/*
-const config = {
-    locales: {
-        "/": {
-            template: "/.vuepress/financialDetails/zh_cn.md",
-            path: "/finance/",
-            chapterTitle: "### 玩家赞助明细",
-            summary: ["我们共收到了 ", " 元赞助。"],
-            month: "月",
-            year: "年",
-            playerName: "玩家名称",
-            amount: "赞助金额 (CNY)",
-            date: "赞助日期"
-        },
-        "/en/": {
-            template: "/.vuepress/financialDetails/en_us.md",
-            path: "/en/finance",
-            chapterTitle: "### Sponsorship Details",
-            summary: ["我们共收到了 ", " 元赞助。"],
-            month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            year: "",
-            playerName: "Sponsor",
-            amount: "赞助金额 (CNY)",
-            date: "赞助日期"
-        }
-    },
-    data: "/.vuepress/financialDetails/data.toml"
-}
-*/
 
 function centToYuan(cent) {
     let centStr = cent.toString()
@@ -67,10 +38,10 @@ function createDetails(data, i18n) {
 
     for (let year of hillSort(Object.keys(data))) {
         let monthResults = []
-        for (let month of hillSort(Object.keys(data[year]))) {
+        for (let month in data[year]) {
             let monthResult = "##### " + (nonNumericalMonth ? i18n.month[month - 1] : month + i18n.month) + `\n| ${i18n.playerName} | ${i18n.amount}  | ${i18n.date} |\n|  :----:  | :----:  | :----: |\n`
             for (let entry of data[year][month]) {
-                monthResult += `| ${entry.name} | ${centToYuan(entry.amount)} | ${entry.day} |\n`
+                monthResult += `| ${entry.name} | ${centToYuan(entry.amount)} | ${entry.day}${i18n.day} |\n`
                 sum += entry.amount
             }
             monthResults.unshift(monthResult)
@@ -89,18 +60,9 @@ const financialDetailsPlugin = (options) => {
         return {
             name: 'financialDetails',
 onInitialized: async (app) => {
-    try {
-        // Add a log statement here to check if the hook is being called
-        console.log('onInitialized hook called');
-
         let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" });
-        console.log('Read file successfully:', data);
-
         for (let lang in options.locales) {
-            // Add a log statement to check the language iteration
-            console.log('Processing language:', lang);
             let details = createDetails(data, options.locales[lang])
-            console.log(details)
             let templateData = await readFile(app.dir.source() + options.locales[lang].template)
             let page = await createPage(app, {
                 path: options.locales[lang].path,
@@ -108,10 +70,7 @@ onInitialized: async (app) => {
             });
             app.pages.push(page);
         }
-    } catch (error) {
-        console.error('Error in onInitialized hook:', error);
     }
-}
 
     }
 }}
