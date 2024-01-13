@@ -18,5 +18,5 @@ actions:
     type: secondary
     link: /play/
 
-footer: MIT Licensed | Copyright © 2023-OWL Union
+footer: 本站的全部文字在知识共享 署名-非商业性-禁止演绎 4.0协议之条款下提供，附加条款亦可能应用。（请参阅使用条款） | Copyright © 2023-OWL Union
 ---
