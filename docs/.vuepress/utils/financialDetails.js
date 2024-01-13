@@ -16,7 +16,7 @@ function hillSort(arr) {
     }
     return arr
 }
-
+/*
 const config = {
     locales: {
         "/": {
@@ -44,6 +44,7 @@ const config = {
     },
     data: "/.vuepress/financialDetails/data.toml"
 }
+*/
 
 function centToYuan(cent) {
     let str = cent.toString()
@@ -79,9 +80,9 @@ const financialDetailsPlugin = (options) => {
     return {
         name: 'financialDetails',
         onInitialized: async (app) => {
-            let data = await readFile(dir.source() + options.data, { encoding: "utf-8" })
-            for (lang of options.locales) {
-                let content = (await readFile(dir.source() + options.locales[lang]    .template), { encoding: "utf-8" }).replace("%%%details%%%", createDetails(data, options.locales[lang]))
+            let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" }).toString("utf-8")
+            for (let lang in options.locales) {
+                let content = (await readFile(app.dir.source() + options.locales[lang].template), { encoding: "utf-8" }).toString("utf-8").replace("%%%details%%%", createDetails(data, options.locales[lang]))
                 let page = await createPage(app, {
                     path: options.locales[lang]    .path,
                     content

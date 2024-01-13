@@ -50,8 +50,7 @@ export default {
                     {
                         text: '资金明细',
                         link: '/finance/',
-                        collapsible: true,
-                        children: autoSidebar("finance")
+                        collapsible: true
                         }
                     ]
             },
@@ -75,8 +74,7 @@ export default {
                     {
                         text: 'finance',
                         link: '/en/finance/',
-                        collapsible: true,
-                        children: autoSidebar("en/finance")
+                        collapsible: true
                         }
                     ]
             },
