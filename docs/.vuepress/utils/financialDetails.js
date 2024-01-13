@@ -80,18 +80,32 @@ const financialDetailsPlugin = (options) => {
     return (app) => {
         return {
             name: 'financialDetails',
-            onInitialized: async (app) => {
-                let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" }).toString("utf-8")
-                for (let lang in options.locales) {
-                    let page = await createPage(app, {
-                        path: options.locales[lang].path,
-                        content: (await readFile(app.dir.source() + options.locales[lang].template), { encoding: "utf-8" }).toString("utf-8").replace(String.raw`%%%details%%%`, createDetails(data, options.locales[lang]))
-                    })
-                    app.pages.push(page)
-                }
-            }
+onInitialized: async (app) => {
+    try {
+        // Add a log statement here to check if the hook is being called
+        console.log('onInitialized hook called');
+
+        let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" });
+        console.log('Read file successfully:', data);
+
+        for (let lang in options.locales) {
+            // Add a log statement to check the language iteration
+            console.log('Processing language:', lang);
+            let details = createDetails(data, options.locales[lang])
+            console.log(details)
+            let templateData = await readFile(app.dir.source() + options.locales[lang].template)
+            let page = await createPage(app, {
+                path: options.locales[lang].path,
+                content: templateData.toString("utf-8").replace(String.raw`%%%details%%%`,details)
+            });
+            app.pages.push(page);
         }
+    } catch (error) {
+        console.error('Error in onInitialized hook:', error);
     }
 }
+
+    }
+}}
 
 export default financialDetailsPlugin
