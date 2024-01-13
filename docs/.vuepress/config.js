@@ -4,6 +4,7 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
+import { financialDetailsPlugin } from "./utils/financialDetails.js"
 import autoSidebar from "./utils/autoSidebar.js"
 
 
@@ -92,12 +93,12 @@ export default {
         colorModeSwitch: true
     }),
     plugins: [
-    gitPlugin({
+        gitPlugin({
             createdTime: false,
             updatedTime: true,
             contributors: true
         }),
-    mdEnhancePlugin({
+        mdEnhancePlugin({
             gfm: true,
             presentation: true,
             container: true,
@@ -105,7 +106,34 @@ export default {
             codetabs: true,
             card: true
         }),
-    copyCodePlugin({})
+        copyCodePlugin({}),
+        financialDetailsPlugin({
+            locales: {
+                "/": {
+                    template: "/.vuepress/financialDetails/zh_cn.md",
+                    path: "/finance/",
+                    chapterTitle: "### 玩家赞助明细",
+                    summary: ["我们共收到了 ", " 元赞助。"],
+                    month: "月",
+                    year: "年",
+                    playerName: "玩家名称",
+                    amount: "赞助金额 (CNY)",
+                    date: "赞助日期"
+                },
+                "/en/": {
+                    template: "/.vuepress/financialDetails/en_us.md",
+                    path: "/en/finance",
+                    chapterTitle: "### Sponsorship Details",
+                    summary: ["我们共收到了 ", " 元赞助。"],
+                    month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                    year: "",
+                    playerName: "Sponsor",
+                    amount: "赞助金额 (CNY)",
+                    date: "赞助日期"
+                }
+            },
+            data: "/.vuepress/financialDetails/data.toml"
+        })
     /*,
     docsearchPlugin({
       appId: '2HM9GWMXWD',
