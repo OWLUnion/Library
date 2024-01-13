@@ -82,10 +82,9 @@ const financialDetailsPlugin = (options) => {
         onInitialized: async (app) => {
             let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" }).toString("utf-8")
             for (let lang in options.locales) {
-                let content = (await readFile(app.dir.source() + options.locales[lang].template), { encoding: "utf-8" }).toString("utf-8").replace("%%%details%%%", createDetails(data, options.locales[lang]))
                 let page = await createPage(app, {
                     path: options.locales[lang]    .path,
-                    content
+                    content: (await readFile(app.dir.source() + options.locales[lang].template), { encoding: "utf-8" }).toString("utf-8").replace("%%%details%%%", createDetails(data, options.locales[lang]))
                 })
                 app.pages.push(page)
             }
