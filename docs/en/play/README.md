@@ -12,6 +12,9 @@ Version:1.20.3x
 ## 1.18.12 Original Server
 [Click here](minecraft://?addExternalServer=OWL-origin|8th.kupars.top:19133) to import server to the list
 Version:1.18.12
+Tip:
+Original Server was provided by ZhuShu1225,
+its close now,because something wrong
 
 ### Archives of past weeks
 If you want to get the archives of past weeks,you can go to[OWL Memories](https://lib.kupars.top/en/wiki/OWL-Memories.html),[OWL Memories](https://lib.kupars.top/en/wiki/OWL-Memories.html) saves many archives of past weeks,you can find something that you need in here.
