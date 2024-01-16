@@ -12,17 +12,7 @@ Our Wild Land, Our Wonderful Love.
 
 ## 如何进入 OWL Server
 
-您可以使用以下IP和端口来进入 OWL Server 八周目
-
-IP：kupars.top
-
-端口：19132
-
-您可以使用以下IP和端口来进入 OWL Server 九周目
-
-IP：play.kupars.top
-
-端口：19132
+您可以[点击此处](https://lib.kupars.top/play/)来一键导入服务器至您的服务器列表
 
 ## 如何使用插件及 Add-ons
 
