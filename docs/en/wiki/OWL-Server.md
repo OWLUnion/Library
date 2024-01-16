@@ -12,7 +12,7 @@ Love & Freedom
 
 ## How to enter OWL Server
 
-You can [click here](https://lib.kupars.top/en/play/) to
+You can [click here](https://lib.kupars.top/en/play/) to import server to the list
 
 ## How to use plug-ins and Add-ons
 
