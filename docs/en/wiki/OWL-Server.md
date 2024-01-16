@@ -12,11 +12,7 @@ Love & Freedom
 
 ## How to enter OWL Server
 
-You can use the following IP and port to enter OWL Server 8th.
-
-IP: kupars.top
-
-Port: 19132
+You can [click here](https://lib.kupars.top/en/play/) to
 
 ## How to use plug-ins and Add-ons
 
