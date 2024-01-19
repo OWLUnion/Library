@@ -12,7 +12,7 @@ Our Wild Land, Our Wonderful Love.
 
 ## 如何进入 OWL Server
 
-您可以[点击此处](https://lib.kupars.top/play/)来一键导入服务器至您的服务器列表
+您可以[在这里](https://lib.kupars.top/play/)将服务器地址导入至您游戏客户端的服务器列表
 
 ## 如何使用插件及 Add-ons
 

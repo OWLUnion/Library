@@ -11,7 +11,7 @@ actions:
   - text: Announcement
     type: secondary 
     link: /en/announcement/
-  - text: Finance
+  - text: Finance Details
     type: secondary 
     link: /en/finance/
   - text: Play OWL Server

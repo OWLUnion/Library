@@ -6,7 +6,7 @@ OWL Square is our player communication group and a harmonious and friendly commu
 
 ## How to enter OWL Square
 
-You can join the OWL Square QQ group chat through the group number 673131032.
+You can join the OWL Square QQ group with group number `924303827`.
 
 ## Community Convention
 
