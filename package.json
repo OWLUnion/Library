@@ -1,8 +1,8 @@
 {
-  "name": "vuepress-owl",
+  "name": "owl-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
     "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
@@ -10,9 +10,13 @@
   },
   "keywords": [],
   "author": "AlexXuCN",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWLUnion/Library.git"
+  },
+  "homepage": "https://lib.kupars.top/",
   "dependencies": {
-    "@vuepress/client": "2.0.0-beta.66",
     "@vuepress/core": "2.0.0-rc.0",
     "@vuepress/plugin-git": "2.0.0-beta.66",
     "@vuepress/theme-default": "2.0.0-beta.66",
@@ -20,6 +24,7 @@
     "vuepress": "2.0.0-beta.66"
   },
   "devDependencies": {
+    "@vuepress/client": "2.0.0-rc.0",
     "@vuepress/plugin-docsearch": "2.0.0-beta.67",
     "vue": "3.3.4",
     "vuepress-plugin-copy-code2": "2.0.0-beta.234",
