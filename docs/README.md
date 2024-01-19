@@ -3,6 +3,7 @@ home: true
 heroImage: /assets/世界旗/0.png
 heroText: OWL Library
 tagline: 自由，开放，平等，互爱。
+新的 OWL Square 群号 924303827，欢迎加入。
 sidebar: true
 actions:
   - text: 百科全书
