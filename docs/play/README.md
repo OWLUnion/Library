@@ -2,7 +2,10 @@
   OWL Server由多个周目组成,在这里,您可以一键导入服务器,以此更便捷的游玩服务器
 
 ## OWL 9th
-[点击此处](minecraft://?addExternalServer=OWL-9th|kupars.top:19132)一键导入
+线路1: 上海线路
+[点击此处](minecraft://?addExternalServer=OWL-9th-沪|kupars.top:19132)一键导入
+线路2: 中国西南地区线路
+[点击此处](minecraft://?addExternalServer=OWL-9th-西南|9th.meteor1018.top:19133)一键导入
 版本:1.20.3x-1.20.41
 
 ## OWL 8th
