@@ -3,9 +3,9 @@
 
 ## OWL 9th
 线路1: 上海线路
-[点击此处](minecraft://?addExternalServer=OWL-9th-沪|kupars.top:19132)一键导入
+[点击此处](minecraft://?addExternalServer=OWL-9th沪|kupars.top:19132)一键导入
 线路2: 中国西南地区线路
-[点击此处](minecraft://?addExternalServer=OWL-9th-西南|9th.meteor1018.top:19133)一键导入
+[点击此处](minecraft://?addExternalServer=OWL-9th西南|9th.meteor1018.top:19133)一键导入
 版本:1.20.3x-1.20.41
 
 ## OWL 8th
