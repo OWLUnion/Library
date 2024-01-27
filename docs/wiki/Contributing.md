@@ -12,7 +12,7 @@ OWL Library 由 [Vuepress](https://v2.vuepress.vuejs.org/zh/) 驱动，静态网
   logo="https://lib.kupars.top/assets/logo/library.png"
   link="https://github.com/OWLUnion/Library"
   background="rgba(247,248,250,0.15)"
-/>
+></VPCard>
 
 因此，你需要：  
 - 一个 GitHub 帐户  
