@@ -2,7 +2,6 @@ import { gitPlugin } from "@vuepress/plugin-git";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
-// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 import financialDetailsPlugin from "./utils/financialDetails.js"
 import autoSidebar from "./utils/autoSidebar.js"
@@ -33,6 +32,7 @@ export default {
                 selectLanguageName: '简体中文',
                 selectLanguageText: '选择语言',
                 selectLanguageAriaLabel: '选择语言',
+                editLinkText: '在 GitHub 上编辑',
                 sidebar: [
                     {
                         text: 'Wiki',
@@ -58,6 +58,7 @@ export default {
                 selectLanguageName: 'English',
                 selectLanguageText: 'Languages',
                 selectLanguageAriaLabel: "Languages",
+                editLinkText: 'Edit on GitHub',
                 sidebar: [
                     {
                         text: 'Wiki',
@@ -87,7 +88,6 @@ export default {
         docsDir: 'docs',
         docsBranch: 'main',
         editLinks: true,
-        editLinkText: 'Edit on GitHub',
         colorModeSwitch: true
     }),
     plugins: [
@@ -102,7 +102,7 @@ export default {
             container: true,
             tabs: true,
             codetabs: true,
-            card: true
+            components: true
         }),
         copyCodePlugin({}),
         financialDetailsPlugin({
