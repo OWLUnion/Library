@@ -122,7 +122,7 @@ export default {
             container: true,
             tabs: true,
             codetabs: true,
-            card: true
+            component: true
         }),
         copyCodePlugin({}),
         financialDetailsPlugin({

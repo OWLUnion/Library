@@ -4,6 +4,7 @@ heroImage: /assets/世界旗/0.png
 heroText: OWL Library
 tagline: Our Wild Land, Our Wonderful Love.
 sidebar: true
+title: OWL Library
 actions:
   - text: Wiki
     type: primary 

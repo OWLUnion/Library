@@ -4,6 +4,7 @@ heroImage: /assets/世界旗/0.png
 heroText: OWL Library
 tagline: "自由，开放，平等，互爱。"
 sidebar: true
+title: OWL Library
 actions:
   - text: 百科全书
     type: primary 
