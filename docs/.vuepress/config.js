@@ -2,7 +2,6 @@ import { gitPlugin } from "@vuepress/plugin-git";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { defaultTheme } from '@vuepress/theme-default';
-// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 import financialDetailsPlugin from "./utils/financialDetails.js"
 import autoSidebar from "./utils/autoSidebar.js"
