@@ -2,7 +2,7 @@
 
 ## OWL Foundation
 
-OWL Foundation is a platform for managing players. Since the OWL government opened the sponsorship channel in November 2022, the OWL Foundation has successively received sponsorship from many players, for which we are deeply grateful. All funds sponsored by players will be used to build OWL Server. The following is the player sponsorship details and fund usage as of August 3, 2023. The player with an unknown name has been replaced with an incomplete name on the payment page. If the name or payment is incorrect, please contact us.
+OWL Foundation is a platform for managing players. Since the OWL government opened the sponsorship channel in November 2022, the OWL Foundation has successively received sponsorship from many players, for which we are deeply grateful. All funds sponsored by players will be used to build OWL Server. The following is the latest player sponsorship details and fund usage. The player with an unknown name has been replaced with an incomplete name on the payment page. If the name or payment is incorrect, please contact us.
 
 %%%details%%%
 
