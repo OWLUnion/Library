@@ -82,13 +82,13 @@ export default {
                         children: autoSidebar("en/wiki")
                     },
                     {
-                        text: 'announcement',
+                        text: 'Announcements',
                         link: '/en/announcement/',
                         collapsible: true,
                         children: autoSidebar("en/announcement")
                     },
                     {
-                        text: 'finance',
+                        text: 'Finance Details',
                         link: '/en/finance/',
                         collapsible: true
                     },
