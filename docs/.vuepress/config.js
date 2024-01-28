@@ -39,30 +39,35 @@ export default {
                         link: '/wiki/',
                         collapsible: true,
                         children: autoSidebar("wiki")
-
-                        },
+                    },
                     {
                         text: '公告',
                         link: '/announcement/',
                         collapsible: true,
                         children: autoSidebar("announcement")
-                        },
+                    },
                     {
                         text: '资金明细',
                         link: '/finance/',
                         collapsible: true
-                        },
+                    },
+                    {
+                        text: '公约',
+                        link: '/rules/',
+                        collapsible: true,
+                        children: autoSidebar("rules")
+                    },
                     {
                         text: '加入服务器',
                         link: '/play/',
                         collapsible: true
-                        },
+                    },
                     {
                         text: '首页',
                         link: '/',
                         collapsible: false
-                        }
-                    ]
+                    }
+                ]
             },
             '/en/': {
                 selectLanguageName: 'English',
@@ -75,29 +80,35 @@ export default {
                         link: '/en/wiki/',
                         collapsible: true,
                         children: autoSidebar("en/wiki")
-                        },
+                    },
                     {
                         text: 'announcement',
                         link: '/en/announcement/',
                         collapsible: true,
                         children: autoSidebar("en/announcement")
-                        },
+                    },
                     {
                         text: 'finance',
                         link: '/en/finance/',
                         collapsible: true
-                        },
+                    },
+                    {
+                        text: 'Rules',
+                        link: '/en/rules/',
+                        collapsible: true,
+                        children: autoSidebar("/en/rules")
+                    },
                     {
                         text: 'Join Server',
                         link: '/en/play/',
                         collapsible: true
-                        },
+                    },
                     {
                         text: 'Homepage',
                         link: '/en/',
                         collapsible: false
-                        }
-                    ]
+                    }
+                ]
             },
         },
         nextLinks: true,
