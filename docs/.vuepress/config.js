@@ -96,7 +96,7 @@ export default {
                         text: 'Rules',
                         link: '/en/rules/',
                         collapsible: true,
-                        children: autoSidebar("/en/rules")
+                        children: autoSidebar("en/rules")
                     },
                     {
                         text: 'Join Server',
@@ -133,7 +133,7 @@ export default {
             container: true,
             tabs: true,
             codetabs: true,
-            component: true
+            card: true
         }),
         copyCodePlugin({}),
         financialDetailsPlugin({
