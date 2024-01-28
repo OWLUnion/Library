@@ -48,6 +48,18 @@ OWL周年定制双面时尚帆布袋等。
 
 OWL Chat 群头像等。
 
+## 图书馆
+
+### 设计理念
+
+![t图书馆(/assets/logo/library.png)
+
+颜色采用 OWL 主题色，采用了简约的 Material Design，表示人与书籍。
+
+### 应用场景
+
+OWL Library 网站图标等。
+
 ## 渐变色圆
 
 ### 设计理念
