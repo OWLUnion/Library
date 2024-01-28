@@ -33,6 +33,9 @@ export default {
                 selectLanguageText: '选择语言',
                 selectLanguageAriaLabel: '选择语言',
                 editLinkText: '在 GitHub 上编辑',
+                repoLabel: '在 GitHub 上查看',
+                lastUpdatedText: '上次更新',
+                contributorsText: '贡献者',
                 sidebar: [
                     {
                         text: 'Wiki',
@@ -74,6 +77,9 @@ export default {
                 selectLanguageText: 'Languages',
                 selectLanguageAriaLabel: "Languages",
                 editLinkText: 'Edit on GitHub',
+                repoLabel: 'View on Github',
+                lastUpdatedText: 'Last Updated',
+                contributorsText: 'Contributors',
                 sidebar: [
                     {
                         text: 'Wiki',
@@ -114,10 +120,11 @@ export default {
         nextLinks: true,
         prevLinks: true,
         repo: 'OWLUnion/Library',
-        repoLabel: 'View on Github',
         docsRepo: 'OWLUnion/Library',
         docsDir: 'docs',
         docsBranch: 'main',
+        lastUpdated: true,
+        contributors: true,
         editLinks: true,
         colorModeSwitch: true
     }),

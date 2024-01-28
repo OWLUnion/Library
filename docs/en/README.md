@@ -19,10 +19,10 @@ actions:
     type: secondary
     link: /en/play/
 
-footer: MIT Licensed | Copyright © 2023-OWL Union
+footer: MIT Licensed | Copyright © 2023-Today OWL Union
 ---
 
 # Notify
-Apologizes,because something unknown,the previous group can't be used.You can use the number of group  [924303827](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=1uK03IZGr2thz5COuz1M82iyY67KOIua&authKey=pMk1EXGdLh63Sk0wVdYlwLAAJVsVF49O0qeDAnXJ97PhfnQKi4cl%2BYgIMyvXcmPw&noverify=0&group_code=924303827) to join new group.We'll rebuild group quickly.We welcome you to our new group to play together!😏
+Apologizes,because of something unknown, our previous QQ group can't be used. You can join the new QQ group with group number [924303827](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=1uK03IZGr2thz5COuz1M82iyY67KOIua&authKey=pMk1EXGdLh63Sk0wVdYlwLAAJVsVF49O0qeDAnXJ97PhfnQKi4cl%2BYgIMyvXcmPw&noverify=0&group_code=924303827). We'll rebuild pur group quickly. Welcome to the new group to play together!😏
 
-If you have added the friends who play OWL Server,you can invite them to join our group.Tks a lot.🌟
+If you have friends who play in OWL Server, you can invite them to join our group. Tks a lot.🌟

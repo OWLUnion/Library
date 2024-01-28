@@ -19,7 +19,7 @@ actions:
     type: secondary
     link: /play/
 
-footer: MIT Licensed | Copyright © 2023-OWL Union
+footer: MIT Licensed | Copyright © 2023-至今 OWL Union
 ---
 
 # 通知  
