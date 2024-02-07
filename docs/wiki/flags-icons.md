@@ -52,7 +52,7 @@ OWL Chat 群头像等。
 
 ### 设计理念
 
-![t图书馆(/assets/logo/library.png)
+![图书馆](/assets/logo/library.png)
 
 颜色采用 OWL 主题色，采用了简约的 Material Design，表示人与书籍。
 
