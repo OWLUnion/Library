@@ -27,12 +27,15 @@
 
 -	617.11元暂未使用。
 
-## Kupars 个人支出
-
-OWL Server 在2021年9月到2022年11月的服务器费用由 Kupars 个人支出。  
-除此之外，United Servers 联合活动公共奖金、OWL Store 的亏损和野草云香港服务器购买资金也由 Kupars 个人支出，不会算在 OWL Foundation 内。
-
 ## 基金会之外的资金支持
+
+- OWL Server 在2021年9月到2022年11月的服务器费用由 Kupars 支出。
+
+- Kupars 和 ZhuShu1225 为 United Servers 联合活动提供公共奖金。
+
+- AlexXuCN 为 United Servers 联合活动提供服务器并制作地图。
+
+- OWL Store 的亏损和野草云香港服务器购买资金由 Kupars 支出。
 
 - ZhuShu1225 曾购买过两个月的野草云香港服务器的使用权，但是将服务器无偿提供给 OWL Server 使用。
 
