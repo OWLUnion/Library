@@ -6,7 +6,7 @@ OWL Square 是我们的玩家交流群，也是一个和谐友善的社区。
 
 ## 如何进入 OWL Square
 
-您可通过群号 `924303827` 来加入 OWL Square QQ群聊。
+您可通过群号 [924303827](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=1uK03IZGr2thz5COuz1M82iyY67KOIua&authKey=pMk1EXGdLh63Sk0wVdYlwLAAJVsVF49O0qeDAnXJ97PhfnQKi4cl%2BYgIMyvXcmPw&noverify=0&group_code=924303827) 来加入 OWL Square QQ群聊。
 
 ## 社区公约
 
