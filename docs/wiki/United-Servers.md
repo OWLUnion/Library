@@ -6,7 +6,7 @@ United Servers 是由 OWL Server 建立的联合服务器组织，旨在共同�
 
 ## United Servers 有哪些服务器（按名称首字母排列）
 
-* EnderDragon Server
+* EnderDragon Server(已停运)
 
 * Laocao Server
 
