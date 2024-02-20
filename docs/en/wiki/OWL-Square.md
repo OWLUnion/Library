@@ -12,7 +12,7 @@ You can join the OWL Square QQ group with group number `924303827`.
 
 Players' comments in OWL Square need to comply with the OWL Square community convention.
 
-🚫You cannot send the following content, otherwise it will be withdrawn:
+**🚫You cannot send the following content, otherwise it will be withdrawn:**
 
 * 😨Images or videos that cause discomfort;
 
@@ -26,13 +26,22 @@ Players' comments in OWL Square need to comply with the OWL Square community con
 
 * 😖Content that invades other people’s privacy.
 
-We may remove the following users from group chats:
+**We may remove the following users from group chats:**
 
 * 😕Vulgar, false and fraudulent accounts;
 
 * 😡Users who have been removed from the group chat by unanimous consent;
 
 * 🤪Users who have violated the rules multiple times.
+
+Other things to note:
+
+**🚫Dear players, please don't make unreasonable requests to the admins, such as:**
+* Asking admins for items in game.
+* Sending the admins unknown websites with the risk of leaking personal information
+* Etc...
+
+🚫If any of the above behaviors occur,admins can refuse and take action. We also kindly ask all players to adhere to the rules.Admins also need to manage your behaviour and don't condone such behaviour.
 
 ## What should I do if I am banned?
 
