@@ -31,6 +31,7 @@ OWL管理组旨在维护 OWL Square 社区氛围、维护服务器的稳定流�
 ## 联系方式
 
 您可通过 OWL Square 群聊联系管理员，也可通过邮箱<nax08@outlook.com>发送邮件给 Kupars Nax。
+~~找不到就找煮熟<z2675938688@gmail.com>~~
 
 ## 组成方式
 
