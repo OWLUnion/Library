@@ -3,23 +3,23 @@
 
 ## OWL Server X
 
-**随机选择（推荐）** [一键导入](minecraft://?addExternalServer=§l§bO§fW§aL§r%20§lServer§r|kupars.top:19132)  
+**随机选择（推荐）** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r|kupars.top:19132)  
 ```
 kupars.top
 ```
 
-**上海线路** [一键导入](minecraft://?addExternalServer=§l§bO§fW§aL§r%20§lServer§r%20-%20上海|shanghai.mc.kupars.top:19132)  
+**上海线路** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r%20-%20Shanghai|shanghai.mc.kupars.top:19132)  
 ```
 shanghai.mc.kupars.top
 ```
 
-**北京线路** [一键导入](minecraft://?addExternalServer=§l§bO§fW§aL§r%20§lServer§r%20-%20北京|beijing.mc.kupars.top:19132)  
+**北京线路** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r%20-%20Beijing|beijing.mc.kupars.top:19132)  
 ```
 beijing.mc.kupars.top
 ```
 
 
-::: info 历代周目存档
+::: note 历代周目存档
 
 如果您想要获取历代周目的存档,请移步 [OWL Memories](/wiki/OWL-Memories.html)，你可以在这里找到大部分历代周目存档文件的下载方式。
 
