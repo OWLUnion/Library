@@ -136,11 +136,10 @@ export default {
         }),
         mdEnhancePlugin({
             gfm: true,
-            presentation: true,
-            container: true,
             tabs: true,
             codetabs: true,
-            card: true
+            hint: true,
+            components: true
         }),
         copyCodePlugin({}),
         financialDetailsPlugin({

@@ -1,23 +1,26 @@
 # 加入服务器
-  OWL Server由多个周目组成,在这里,您可以一键导入服务器,以此更便捷的游玩服务器
+  OWL Server 目前有 1 个正在运行的周目，你可以在下面找到服务器地址并一键导入游戏
 
-## OWL 9th
-线路1: 上海线路
-[点击此处](minecraft://?addExternalServer=OWL-9th-沪|kupars.top:19132)一键导入
-线路2: 中国西南地区线路
-[点击此处](minecraft://?addExternalServer=OWL-9th-西南|9th.meteor1018.top:19133)一键导入
-版本:1.20.3x-1.20.41
+## OWL Server X
 
-## OWL 8th
-[点击此处](minecraft://?addExternalServer=OWL-8th|8th.kupars.top:19132)一键导入
-版本:1.20.3x
+**随机选择（推荐）** [一键导入](minecraft://?addExternalServer=§l§bO§fW§aL§r%20§lServer§r|kupars.top:19132)  
+```
+kupars.top
+```
 
-## 1.18.12纯净生存服
-[点击此处](minecraft://?addExternalServer=OWL-origin|8th.kupars.top:19133)一键导入
-版本:1.20.3x
-Tip:
-纯净服服务器由ZhuShu1225提供,
-由于部分原因最近无法游玩
+**上海线路** [一键导入](minecraft://?addExternalServer=§l§bO§fW§aL§r%20§lServer§r%20-%20上海|shanghai.mc.kupars.top:19132)  
+```
+shanghai.mc.kupars.top
+```
 
-### 历代周目存档
-如果您想要获取历代周目的存档,请移步[OWL Memories](https://lib.kupars.top/wiki/OWL-Memories.html),[OWL Memories](https://lib.kupars.top/wiki/OWL-Memories.html)中留有许多历代周目存档文件的下载方式,您可以在里面找到您想要的
+**北京线路** [一键导入](minecraft://?addExternalServer=§l§bO§fW§aL§r%20§lServer§r%20-%20北京|beijing.mc.kupars.top:19132)  
+```
+beijing.mc.kupars.top
+```
+
+
+::: info 历代周目存档
+
+如果您想要获取历代周目的存档,请移步 [OWL Memories](/wiki/OWL-Memories.html)，你可以在这里找到大部分历代周目存档文件的下载方式。
+
+:::
