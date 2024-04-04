@@ -13,11 +13,6 @@ kupars.top
 shanghai.mc.kupars.top
 ```
 
-**北京线路** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r%20-%20Beijing|beijing.mc.kupars.top:19132)  
-```
-beijing.mc.kupars.top
-```
-
 
 ::: note 历代周目存档
 
