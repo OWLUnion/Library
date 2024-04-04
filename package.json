@@ -4,9 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
-    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
-    "deploy": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs && rm -rf /var/www/lib.kupars.top && cp docs/.vuepress/dist /var/www/lib.kupars.top -r"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "keywords": [],
   "author": "AlexXuCN",
@@ -16,18 +15,18 @@
     "url": "git+https://github.com/OWLUnion/Library.git"
   },
   "homepage": "https://lib.kupars.top/",
-  "dependencies": {
-    "@vuepress/core": "2.0.0-rc.0",
-    "@vuepress/plugin-git": "2.0.0-beta.66",
-    "@vuepress/theme-default": "2.0.0-beta.66",
-    "toml": "^3.0.0",
-    "vuepress": "2.0.0-beta.66"
-  },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.67",
-    "vue": "3.3.4",
-    "vuepress-plugin-copy-code2": "2.0.0-beta.234",
-    "vuepress-plugin-md-enhance": "2.0.0-beta.234"
+    "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "@vuepress/plugin-copy-code": "2.0.0-rc.23",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.21",
+    "@vuepress/plugin-git": "2.0.0-rc.22",
+    "@vuepress/theme-default": "2.0.0-rc.23",
+    "vue": "^3.4.21",
+    "vuepress": "2.0.0-rc.9",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.33"
+  },
+  "dependencies": {
+    "@vuepress/core": "2.0.0-rc.9",
+    "toml": "^3.0.0"
   }
 }
