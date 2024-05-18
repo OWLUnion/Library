@@ -18,6 +18,9 @@ actions:
   - text: 加入 OWL Server
     type: secondary
     link: /play/
+  - text: 运维管理
+    type: secondary
+    link: /administration/
 
 footer: MIT Licensed | Copyright © 2023-至今 OWL Union
 ---
