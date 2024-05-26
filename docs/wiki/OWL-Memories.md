@@ -16,7 +16,7 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 ### OWL Server 3rd. & 4th.
 
-暂不支持下载。
+这两个周目的存档不支持下载。
 
 ### OWL Server 5th. Created & Managed by Houti Government
 
@@ -36,11 +36,13 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 ### OWL Server 8th.
 
-即将提供下载。
+即将提供。
 
 ### OWL Server 九周目
 
-即将提供下载。
+[123云盘](https://www.123pan.com/s/Hrb5Vv-bTaad.html)
+
+本周目支持下载服务端。
 
 ### OWL Server X
 
