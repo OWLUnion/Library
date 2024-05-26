@@ -36,7 +36,9 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 ### OWL Server 8th.
 
-即将提供。
+[123云盘](https://www.123pan.com/s/Hrb5Vv-ZTaad.html)
+
+本周目支持下载整个服务端，包含插件、地图存档等所有文件。
 
 ### OWL Server 九周目
 
