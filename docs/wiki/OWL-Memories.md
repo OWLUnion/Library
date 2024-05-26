@@ -2,7 +2,7 @@
 
 ## 什么是 OWL Memories
 
-OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后，OWL Memories 支持下载整个服务端。每一个周目结束后，我们都会将存档上传至云盘或 GitHub 以供下载。
+OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后，OWL Memories 支持下载整个服务端，包含插件、地图存档等所有文件。每一个周目结束后，我们都会将存档上传至云盘以供下载。
 
 ## 下载方式
 
@@ -26,13 +26,13 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 [OneDrive](https://1drv.ms/u/s!AoLQfFAZB-GPhbcA7g4GCTPTGbI9tw?e=wGi1lJ)  [百度网盘](https://pan.baidu.com/s/1ywRqyfqNGGaNPestbmqcKw?pwd=1234)（提取码：1234）
 
-本周目支持下载服务端。
+本周目支持下载整个服务端，包含插件、地图存档等所有文件。
 
 ### OWL Server 7th.
 
 [百度网盘](https://pan.baidu.com/s/1w4hDtWBrVoWijsr9WKIseQ?pwd=1234)（提取码：1234）  [Google 云端硬盘](https://drive.google.com/file/d/1xhFE-U_Co_u8m3_OQ8fD02MEeNF8l7JK/view?usp=sharing)
 
-本周目支持下载服务端。
+本周目支持下载整个服务端，包含插件、地图存档等所有文件。
 
 ### OWL Server 8th.
 
@@ -42,7 +42,7 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 [123云盘](https://www.123pan.com/s/Hrb5Vv-bTaad.html)
 
-本周目支持下载服务端。
+本周目支持下载整个服务端，包含插件、地图存档等所有文件。
 
 ### OWL Server X
 
