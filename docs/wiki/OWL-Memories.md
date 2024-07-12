@@ -48,4 +48,10 @@ OWL Memories 是 OWL Server 旧周目的存档。在 OWL Server 6th. 及之后�
 
 ### OWL Server X
 
-OWL Server X 是当前的周目，且是长期支持周目。
+[123云盘](https://www.123pan.com/s/Hrb5Vv-fDaad.html)
+
+本周目支持下载整个服务端，包含插件、地图存档等所有文件。您可能会解压出一个名为 X3 的文件夹，但它确实是 OWL Server X 的存档，而不是 OWL Server X3 的。
+
+### OWL Server X2
+
+OWL Server X2 是当前的周目，且是长期支持周目。
