@@ -16,14 +16,14 @@
   },
   "homepage": "https://lib.kupars.top/",
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "@vuepress/plugin-copy-code": "2.0.0-rc.23",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.21",
-    "@vuepress/plugin-git": "2.0.0-rc.22",
-    "@vuepress/theme-default": "2.0.0-rc.23",
-    "vue": "^3.4.21",
-    "vuepress": "2.0.0-rc.9",
-    "vuepress-plugin-md-enhance": "2.0.0-rc.33"
+    "@vuepress/bundler-vite": "2.0.0-rc.17",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.52",
+    "@vuepress/plugin-git": "2.0.0-rc.52",
+    "@vuepress/plugin-prismjs": "2.0.0-rc.52",
+    "@vuepress/theme-default": "2.0.0-rc.52",
+    "vue": "^3.5.10",
+    "vuepress": "2.0.0-rc.17",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.57"
   },
   "dependencies": {
     "@vuepress/core": "2.0.0-rc.9",
