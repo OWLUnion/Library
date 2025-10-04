@@ -3,9 +3,10 @@
 
 ## OWL Server X3
 
-**随机选择（推荐）** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r|kupars.top:19132)  
+**[一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r|kupars.top:19132)**
 ```
-kupars.top
+IP地址：kupars.top
+端口：19132
 ```
 
 
