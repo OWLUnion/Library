@@ -1,16 +1,11 @@
 # 加入服务器
   OWL Server 目前有 1 个正在运行的周目，你可以在下面找到服务器地址并一键导入游戏
 
-## OWL Server X
+## OWL Server X3
 
 **随机选择（推荐）** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r|kupars.top:19132)  
 ```
 kupars.top
-```
-
-**上海线路** [一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r%20-%20Shanghai|shanghai.mc.kupars.top:19132)  
-```
-shanghai.mc.kupars.top
 ```
 
 
