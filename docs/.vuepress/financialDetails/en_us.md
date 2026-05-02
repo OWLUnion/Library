@@ -1,38 +1,31 @@
-# Fund details
+# Funding Details
+
+## How to Sponsor
+
+If you enjoy OWL Server, you are welcome to support its long-term operation and development through sponsorship. All sponsorship funds are used for server hosting, domain renewal, and other public maintenance costs. Thank you for every contribution. You can [click here](https://afdian.net/a/kupars) to visit our Afdian page, or use the payment QR code below:
+
+![Payment QR code](/assets/收款码.png)
 
 ## OWL Foundation
 
-OWL Foundation is a platform for managing players. Since the OWL government opened the sponsorship channel in November 2022, the OWL Foundation has successively received sponsorship from many players, for which we are deeply grateful. All funds sponsored by players will be used to build OWL Server. The following is the latest player sponsorship details and fund usage. The player with an unknown name has been replaced with an incomplete name on the payment page. If the name or payment is incorrect, please contact us.
+The OWL Foundation manages player sponsorships for OWL Server. Since the OWL administration opened the sponsorship channel in November 2022, many players have supported the server, and we are deeply grateful. In addition to sponsorships recorded by the foundation, many players have also provided indirect support through servers, event prizes, and other resources; see “External Financial Support” below for details. All player sponsorship funds are used for OWL Server construction and maintenance. The records below show the latest sponsorships and fund usage. When a payer name is incomplete or unknown, we use the partial name shown on the payment page. If any name or amount is incorrect, please contact us so we can correct it.
 
 %%%details%%%
 
-### Sponsorship usage details
+%%%usage%%%
 
-- 36.45 yuan was transferred to DianFenMian for purchasing servers;
-
-- 188.00 yuan was used to purchase Tencent Cloud servers on February 26, 2023;
-
-- 28.00 yuan will be used for domain name renewal on April 15, 2023;
-
-- 5.00 yuan will be used for the three-server alliance speedrunning competition bonus on April 22, 2023;
-
-- 208.01 yuan has not been used yet.
-
-## Kupars Personal Expenses
-
-The server fees for OWL Server from September 2021 to November 2022 will be paid by Kupars personally.
-In addition, United Servers joint activity public bonuses, OWL Store losses and Yecao Cloud Hong Kong server purchase funds are also personally spent by Kupars and will not be counted in the OWL Foundation.
-
-## Indirect financial support
-
-- ZhuShu1225 once purchased the right to use the Yecao Cloud Hong Kong server for two months, but provided the server to OWL Server for free.
-
-- DianFenMian and Siaospeed provided servers for OWL Server for several months.
+%%%externalSupport%%%
 
 # Acknowledgments
 
-The OWL Foundation and Kupars would like to thank everyone for their support of OWL Server. OWL Server is more exciting because of you!
+The OWL Foundation thanks every player for supporting and loving OWL Server. The server is more vibrant because of you.
 
 # Statement
 
-What is stated on this page is completely true. Player sponsorship records are maintained and available for review. You can contact Kupars to obtain payment screenshots of used funds. OWL Server is a public welfare server, there is no mandatory sponsorship, and no player is treated differently due to sponsorship. This page is intended to maintain and demonstrate the openness and transparency of the OWL Foundation.
+All information on this page is based on maintained records. Player sponsorship records are preserved and available for review. OWL Server is a public-benefit server: sponsorship is never mandatory, and no player receives different treatment because of sponsorship. This page exists to keep the OWL Foundation open, transparent, and accountable.
+
+# Property Ownership
+
+Funds and property related to OWL Server mainly include OWL Foundation funds and financial or resource support outside the foundation.
+OWL Foundation funds are jointly managed by all OWL Security members. For server operation matters such as purchasing servers and renewing domains, OWL Security members may use foundation funds within a reasonable scope.
+For resources provided outside the foundation, player-provided servers remain the property of their providers; OWL Security only uses those server resources within the scope authorized by the providers.
