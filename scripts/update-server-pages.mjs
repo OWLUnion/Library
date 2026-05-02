@@ -3,6 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 const dataPath = new URL('../docs/.vuepress/serverData/owl-x4.json', import.meta.url)
 const readmePath = new URL('../docs/README.md', import.meta.url)
 const playPath = new URL('../docs/play/README.md', import.meta.url)
+const serverPath = new URL('../docs/wiki/OWL-Server.md', import.meta.url)
 const statusPath = new URL('../docs/wiki/OWL-Server-X4.md', import.meta.url)
 const economyPath = new URL('../docs/wiki/OWL-Economy.md', import.meta.url)
 
@@ -59,9 +60,6 @@ actions:
   - text: 了解服务器
     type: secondary
     link: /wiki/OWL-Server.html
-  - text: X4 现状
-    type: secondary
-    link: /wiki/OWL-Server-X4.html
   - text: 经济系统
     type: secondary
     link: /wiki/OWL-Economy.html
@@ -91,8 +89,7 @@ X4 是 Java + 基岩互通生存服，并带有跨版本支持。
 |---|---|
 | 立刻进服 | [加入服务器](/play/) |
 | 生成宣传文案和运营清单 | [运营控制台](/owl-x4-app/) |
-| 先了解 OWL 是什么 | [了解服务器](/wiki/OWL-Server.html) |
-| 查看当前 X4 周目信息 | [X4 现状](/wiki/OWL-Server-X4.html) |
+| 了解 OWL 和 X4 当前信息 | [了解服务器](/wiki/OWL-Server.html) |
 | 查看金币、领地、飞行等规则 | [经济系统](/wiki/OWL-Economy.html) |
 | 查看赞助与支出 | [资金明细](/finance/) |
 
@@ -136,23 +133,27 @@ Java 版直连：\`${data.address}:${data.javaPort}\`
 :::
 `)
 
-await writeFile(statusPath, `# OWL Server ${data.season}
+await writeFile(serverPath, `# 了解服务器
 
-OWL Server ${data.season} 已正式开服。X4 是 Java 版 + 基岩版互通生存周目，带有跨版本支持，可以允许一定范围内的版本跨度。
+OWL Server 是一个以“${data.slogan.replace('。', '')}”为理念的 Minecraft 社区服务器。当前运行周目为 **${data.name} ${data.season}**，定位为 ${data.type}，主打养老生存、主城共建、轻经济和长期社区建设。
 
-::: tip 欢迎回家
+::: tip 当前周目
 
-漫长的黑夜终于破晓，齿轮已经开始转动。通往 OWL X4 新世界的大门已向所有人敞开。
+${data.name} ${data.season} 已正式开服。Java 版可通过 \`${data.address}:${data.javaPort}\` 加入，基岩版可通过 \`${data.address}:${data.bedrockPort}\` 加入。
 
 :::
 
-## 公开状态
+## OWL 是什么样的服务器
 
-${statusText}
+| 方向 | 说明 |
+|---|---|
+| 玩法 | 生存、养老、主城共建、轻经济 |
+| 平台 | Java 版 + 基岩版互通 |
+| 社区 | 鼓励长期建设、玩家协作和公开记录 |
+| 经济 | 金币用于便利、建筑辅助、领地、公寓、传送和装饰 |
+| 底线 | 不出售 OP、创造、神装、常驻飞行等破坏平衡的权限 |
 
-最后自动检查：${generatedAt}
-
-## 快速信息
+## X4 当前信息
 
 | 项目 | 内容 |
 |---|---|
@@ -165,9 +166,17 @@ ${statusText}
 | 基岩版版本 | \`${data.bedrockVersion}\` |
 | 核心理念 | ${data.slogan} |
 
+## 公开状态
+
+${statusText}
+
+最后自动检查：${generatedAt}
+
 ## X4 适合谁
 
 如果你希望找一个节奏慢一点、能长期建设、能参与服务器成长的小型社区，X4 会比较适合你。这里不是以人数堆叠为第一目标，而是希望留下真正愿意一起建设服务器的人。
+
+如果你更想找高强度 PvP、开局即满配、夸张礼包、强付费能力或超大规模商业化快餐服，这里大概率不是最合适的选择。
 
 ## 服务器特色
 
@@ -181,11 +190,37 @@ ${data.features.map((feature) => `- ${feature}`).join('\n')}
 | 长期建设 | 鼓励主城、公寓、领地、商铺和活动发展 |
 | 轻经济 | 金币作为便利与社区服务媒介，不作为战斗力来源 |
 
-::: warning 页面状态
+## 快速入口
 
-服务器功能仍会持续调整。如页面内容与游戏内实际情况不同，请以游戏内公告和管理组说明为准，并提醒我们更新 Library。
+- [加入服务器](/play/)
+- [运营控制台](/owl-x4-app/)
+- [OWL 经济系统](/wiki/OWL-Economy.html)
+- [资金明细](/finance/)
+
+## 反馈问题
+
+遇到连接异常、物品损坏、疑似作弊、规则争议等问题时，请在 OWL 社区频道中反馈。反馈时尽量提供截图、录像、时间、坐标和玩家名，方便管理组核查。
+
+## 历史资料
+
+旧周目的资料、纪念内容和存档下载会继续保留在 OWL Library 中。当前页面会集中维护 OWL Server 与 X4 的核心信息，避免新玩家在多个相似页面之间来回查找。
+`)
+
+await writeFile(statusPath, `# OWL Server ${data.season}
+
+::: tip 页面已合并
+
+X4 现状已经合并到 [了解服务器](/wiki/OWL-Server.html)。那里会统一维护 OWL Server 的介绍、X4 当前信息、服务器特色和当前方向。
 
 :::
+
+## 快速入口
+
+- [了解服务器](/wiki/OWL-Server.html)
+- [加入服务器](/play/)
+- [OWL 经济系统](/wiki/OWL-Economy.html)
+
+保留这个页面是为了兼容旧链接，避免已经发布出去的 \`X4 现状\` 地址失效。
 `)
 
 await writeFile(economyPath, `# OWL 经济系统
