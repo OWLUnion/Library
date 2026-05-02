@@ -1,16 +1,26 @@
 # 加入服务器
 
-OWL Server 当前运行周目为 **X4**。你可以在下方找到服务器地址，并将服务器一键导入游戏。
+OWL Server 当前运行周目为 **X4**。X4 是 Java 版 + 基岩版互通服务器，并带有跨版本支持，可以容许一定范围内的版本跨度。
 
 ## OWL Server X4
 
-**[一键导入](minecraft://?addExternalServer=%C2%A7l%C2%A7bOWL%20%C2%A7aServer%C2%A7r|kupars.top:19132)**
+**[基岩版一键导入](minecraft://?addExternalServer=%C2%A7l%C2%A7bOWL%20%C2%A7aServer%C2%A7r|kupars.top:39132)**
+
+### Java 版
 
 ```text
-服务器名称：OWL Server X4
-IP 地址：kupars.top
-基岩版端口：19132
-服务器类型：互通生存服
+地址：kupars.top
+端口：35565
+直连：kupars.top:35565
+版本：1.21.8 ~ 1.21.11 以及附近版本均可
+```
+
+### 基岩版
+
+```text
+地址：kupars.top
+端口：39132
+版本：26.3 以及附近版本均可
 ```
 
 ## 新玩家建议
