@@ -1,0 +1,45 @@
+{
+  "name": "OWL Server",
+  "season": "X4",
+  "address": "kupars.top",
+  "bedrockPort": 19132,
+  "javaPort": 25565,
+  "type": "互通生存服",
+  "slogan": "自由，开放，平等，互爱。",
+  "oneLine": "一个正在发展中的互通养老生存服，主打主城共建、轻经济和长期社区建设。",
+  "joinUrl": "minecraft://?addExternalServer=%C2%A7l%C2%A7bOWL%20%C2%A7aServer%C2%A7r|kupars.top:19132",
+  "economy": {
+    "rate": "1 元 = 1000 金币",
+    "dailySign": "500 金币/天",
+    "dailyTask": "500 金币/天",
+    "onlineReward": "每在线 30 分钟随机 50-150 金币",
+    "onlineRewardLimit": "600 金币/天",
+    "dailyFreeIncome": "约 1600 金币/天",
+    "fly": "3000 金币 / 30 分钟",
+    "landPrices": [
+      "第 1 块额外领地：3000 金币",
+      "第 2 块额外领地：5000 金币",
+      "第 3 块额外领地：8000 金币",
+      "第 4 块起：10000 金币/块"
+    ],
+    "teleport": {
+      "free": ["/spawn", "/tpa", "/home"],
+      "paid": [
+        "/back：100 金币",
+        "/warp：50 金币",
+        "/rtp：150 金币",
+        "资源世界/下界：100 金币",
+        "末地：200 金币"
+      ]
+    },
+    "principle": "金币可以买舒服，不能买无敌。"
+  },
+  "features": [
+    "Java 与基岩互通，手机和电脑都可以加入",
+    "主打生存、养老、主城共建和玩家社区",
+    "金币主要用于飞行、领地、公寓、传送和装饰",
+    "不出售 OP、创造、神装、常驻飞行和破坏平衡的权限",
+    "保留 OWL 一贯的自由、开放、平等、互爱理念"
+  ],
+  "updatedAt": "2026-05-02"
+}
