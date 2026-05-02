@@ -6,9 +6,12 @@ tagline: "自由，开放，平等，互爱。"
 sidebar: true
 title: OWL Library
 actions:
-  - text: 加入 OWL Server
+  - text: 加入服务器
     type: primary
     link: /play/
+  - text: 了解服务器
+    type: secondary
+    link: /wiki/OWL-Server.html
   - text: X4 现状
     type: secondary
     link: /wiki/OWL-Server-X4.html
@@ -22,15 +25,29 @@ actions:
 footer: MIT Licensed | Copyright © 2023-至今 OWL Union
 ---
 
-# 即刻加入 OWL Server
+# 欢迎来到 OWL Library
 
-OWL Server X4 是服务器当前运行中的周目。Java 版玩家可以通过 `kupars.top:35565` 加入；基岩版玩家可以通过 `kupars.top:39132` 加入。
+OWL Library 是 OWL Server 的公开知识库。这里整理服务器加入方式、当前周目、经济系统、公告、资金明细和历史资料。
 
-这里是 OWL Server 的公开知识库，用于整理加入方式、服务器现状、经济系统、公告、资金明细和历史资料。旧周目的记录会继续保留，新玩家请优先阅读 X4 相关页面。
+::: tip OWL Server X4 已开服
 
-## 快速入口
+Java 版：`kupars.top:35565`  
+基岩版：`kupars.top:39132`
 
-- [加入服务器](/play/)
-- [OWL Server X4 现状](/wiki/OWL-Server-X4.html)
-- [OWL 经济系统](/wiki/OWL-Economy.html)
-- [OWL Server 百科](/wiki/OWL-Server.html)
+X4 是 Java + 基岩互通生存服，并带有跨版本支持。
+
+:::
+
+## 推荐阅读
+
+| 你想做什么 | 入口 |
+|---|---|
+| 立刻进服 | [加入服务器](/play/) |
+| 先了解 OWL 是什么 | [了解服务器](/wiki/OWL-Server.html) |
+| 查看当前 X4 周目信息 | [X4 现状](/wiki/OWL-Server-X4.html) |
+| 查看金币、领地、飞行等规则 | [经济系统](/wiki/OWL-Economy.html) |
+| 查看赞助与支出 | [资金明细](/finance/) |
+
+## OWL X4 一句话
+
+一个正在发展中的 Java + 基岩互通生存服，主打养老生存、主城共建、轻经济和长期社区建设。金币可以买便利，不能买无敌。
