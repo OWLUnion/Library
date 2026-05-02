@@ -24,7 +24,7 @@ footer: MIT Licensed | Copyright © 2023-至今 OWL Union
 
 # 即刻加入 OWL Server
 
-OWL Server X4 是服务器当前运行中的周目。你可以通过 `kupars.top:19132` 在 Minecraft 基岩版加入；Java 版玩家也可以通过互通入口进入服务器。
+OWL Server X4 是服务器当前运行中的周目。Java 版玩家可以通过 `kupars.top:35565` 加入；基岩版玩家可以通过 `kupars.top:39132` 加入。
 
 这里是 OWL Server 的公开知识库，用于整理加入方式、服务器现状、经济系统、公告、资金明细和历史资料。旧周目的记录会继续保留，新玩家请优先阅读 X4 相关页面。
 
