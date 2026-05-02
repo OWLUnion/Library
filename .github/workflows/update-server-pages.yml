@@ -1,0 +1,29 @@
+name: Update server pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 20 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generate current server pages
+        run: node scripts/update-server-pages.mjs
+      - name: Commit generated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/README.md docs/play/README.md docs/wiki/OWL-Server-X4.md docs/wiki/OWL-Economy.md
+          git diff --cached --quiet && exit 0
+          git commit -m "docs: update generated server pages"
+          git push
