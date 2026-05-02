@@ -14,7 +14,7 @@ export default {
     //        '/': {
     lang: 'zh-CN',
     title: 'OWL Library',
-    description: 'Our Wild Land, Our Wonderful Love.',
+    description: '自由、开放、平等、互爱的 OWL Server 知识库。',
     //        },
     //    },
     head: [
@@ -35,7 +35,7 @@ export default {
         contributorsText: '贡献者',
         sidebar: [
             {
-                text: 'Wiki',
+                text: '百科',
                 link: '/wiki/',
                 collapsible: true,
                 children: autoSidebar('wiki')
@@ -47,12 +47,12 @@ export default {
                 children: autoSidebar('announcement')
                     },
             {
-                text: '资金明细',
+                text: '资金公开',
                 link: '/finance/',
                 collapsible: true
                     },
             {
-                text: '公约',
+                text: '社区公约',
                 link: '/rules/',
                 collapsible: true,
                 children: autoSidebar('rules')
@@ -106,17 +106,49 @@ export default {
                 '/': {
                     template: '/.vuepress/financialDetails/zh_cn.md',
                     path: '/finance/',
-                    chapterTitle: '### 玩家赞助明细',
-                    summary: ['我们共收到了 ', ' 元赞助。'],
+                    contentLanguage: 'zh',
+                    chapterTitle: '### 玩家赞助记录',
+                    usageTitle: '### 赞助使用明细',
+                    externalSupportTitle: '## 基金会之外的资金支持',
+                    summary: ['目前我们共收到 ', ' 元赞助。'],
                     month: '月',
                     year: '年',
                     day: '日',
-                    playerName: '玩家名称',
+                    playerName: '玩家',
                     amount: '赞助金额 (CNY)',
                     date: '赞助日期'
                 },
+                '/en/': {
+                    template: '/.vuepress/financialDetails/en_us.md',
+                    path: '/en/finance/',
+                    contentLanguage: 'en',
+                    chapterTitle: '### Player Sponsorship Records',
+                    usageTitle: '### Sponsorship Usage',
+                    externalSupportTitle: '## External Financial Support',
+                    summary: ['We have received ', ' CNY in sponsorships so far.'],
+                    month: [
+                        'January',
+                        'February',
+                        'March',
+                        'April',
+                        'May',
+                        'June',
+                        'July',
+                        'August',
+                        'September',
+                        'October',
+                        'November',
+                        'December'
+                    ],
+                    year: '',
+                    day: '',
+                    playerName: 'Player',
+                    amount: 'Sponsorship Amount (CNY)',
+                    date: 'Date'
+                },
             },
-            data: '/.vuepress/financialDetails/data.toml'
+            data: '/.vuepress/financialDetails/data.toml',
+            usageData: '/.vuepress/financialDetails/usage.toml'
         })
     ]
 }
