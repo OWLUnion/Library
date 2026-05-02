@@ -1,17 +1,30 @@
 # 加入服务器
-  OWL Server 目前有 1 个正在运行的周目，你可以在下面找到服务器地址并一键导入游戏
 
-## OWL Server X3
+OWL Server 当前运行周目为 **X4**。你可以在下方找到服务器地址，并将服务器一键导入游戏。
 
-**[一键导入](minecraft://?addExternalServer=§l§bOWL%20§aServer§r|kupars.top:19132)**
+## OWL Server X4
+
+**[一键导入](minecraft://?addExternalServer=%C2%A7l%C2%A7bOWL%20%C2%A7aServer%C2%A7r|kupars.top:19132)**
+
+```text
+服务器名称：OWL Server X4
+IP 地址：kupars.top
+基岩版端口：19132
+服务器类型：互通生存服
 ```
-IP地址：kupars.top
-端口：19132
-```
 
+## 新玩家建议
+
+首次进入服务器后，建议先完成以下步骤：
+
+1. 阅读出生点规则和基础指引。
+2. 领取新手资源，了解金币、传送、领地和每日任务。
+3. 使用 `/rtp` 或服务器菜单前往适合生存的位置。
+4. 建立第一个临时据点，并设置自己的家。
+5. 加入社区频道，方便获得通知、活动信息和帮助。
 
 ::: note 历代周目存档
 
-如果您想要获取历代周目的存档,请移步 [OWL Memories](/wiki/OWL-Memories.html)，你可以在这里找到大部分历代周目存档文件的下载方式。
+如果你想获取历代周目的存档，请移步 [OWL Memories](/wiki/OWL-Memories.html)。那里保留了大部分历史周目存档文件的下载方式。
 
 :::
