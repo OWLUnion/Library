@@ -55,18 +55,49 @@ function createDetails(data, i18n) {
     return textResult.join("\n")
 }
 
+function createListSection(items, title, language) {
+    let textResult = [title]
+
+    for (let item of items) {
+        textResult.push(`- ${item[language]}`)
+    }
+
+    return textResult.join("\n\n")
+}
+
+function fillTemplate(template, details, usageDetails, i18n) {
+    let content = template.replace(String.raw`%%%details%%%`, details)
+
+    if (usageDetails) {
+        content = content.replace(
+            String.raw`%%%usage%%%`,
+            createListSection(usageDetails.usage, i18n.usageTitle, i18n.contentLanguage)
+        )
+        content = content.replace(
+            String.raw`%%%externalSupport%%%`,
+            createListSection(usageDetails.externalSupport, i18n.externalSupportTitle, i18n.contentLanguage)
+        )
+    }
+
+    return content
+}
+
 const financialDetailsPlugin = (options) => {
     return (app) => {
         return {
             name: 'financialDetails',
 onInitialized: async (app) => {
         let data = await readFile(app.dir.source() + options.data, { encoding: "utf-8" });
+        let usageDetails = undefined
+        if (options.usageData) {
+            usageDetails = parse(await readFile(app.dir.source() + options.usageData, { encoding: "utf-8" }))
+        }
         for (let lang in options.locales) {
             let details = createDetails(data, options.locales[lang])
             let templateData = await readFile(app.dir.source() + options.locales[lang].template)
             let page = await createPage(app, {
                 path: options.locales[lang].path,
-                content: templateData.toString("utf-8").replace(String.raw`%%%details%%%`,details)
+                content: fillTemplate(templateData.toString("utf-8"), details, usageDetails, options.locales[lang])
             });
             app.pages.push(page);
         }
