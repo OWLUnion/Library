@@ -7,6 +7,7 @@ const statusPath = new URL('../docs/wiki/OWL-Server-X4.md', import.meta.url)
 const economyPath = new URL('../docs/wiki/OWL-Economy.md', import.meta.url)
 
 const data = JSON.parse(await readFile(dataPath, 'utf8'))
+const generatedAt = new Date().toISOString().slice(0, 10)
 
 async function fetchStatus() {
   const url = `https://api.mcsrvstat.us/bedrock/3/${data.address}:${data.bedrockPort}`
@@ -39,9 +40,7 @@ function statusBlock(status) {
   ].join('\n\n')
 }
 
-const status = await fetchStatus()
-const generatedAt = new Date().toISOString().slice(0, 10)
-const statusText = statusBlock(status)
+const statusText = statusBlock(await fetchStatus())
 
 await writeFile(readmePath, `---
 home: true
@@ -54,6 +53,9 @@ actions:
   - text: 加入服务器
     type: primary
     link: /play/
+  - text: 运营控制台
+    type: secondary
+    link: /owl-x4-app/
   - text: 了解服务器
     type: secondary
     link: /wiki/OWL-Server.html
@@ -88,6 +90,7 @@ X4 是 Java + 基岩互通生存服，并带有跨版本支持。
 | 你想做什么 | 入口 |
 |---|---|
 | 立刻进服 | [加入服务器](/play/) |
+| 生成宣传文案和运营清单 | [运营控制台](/owl-x4-app/) |
 | 先了解 OWL 是什么 | [了解服务器](/wiki/OWL-Server.html) |
 | 查看当前 X4 周目信息 | [X4 现状](/wiki/OWL-Server-X4.html) |
 | 查看金币、领地、飞行等规则 | [经济系统](/wiki/OWL-Economy.html) |
@@ -100,7 +103,7 @@ ${data.oneLine} 金币可以买便利，不能买无敌。
 
 await writeFile(playPath, `# 加入服务器
 
-OWL Server 当前运行周目为 **${data.season}**。X4 是 Java 版 + 基岩版互通服务器，并带有跨版本支持，可以容许一定范围内的版本跨度。
+OWL Server 当前运行周目为 **${data.season}**。X4 是 Java 版 + 基岩版互通服务器，并带有跨版本支持，可以允许一定范围内的版本跨度。
 
 ::: tip 快速加入
 
@@ -135,7 +138,7 @@ Java 版直连：\`${data.address}:${data.javaPort}\`
 
 await writeFile(statusPath, `# OWL Server ${data.season}
 
-OWL Server ${data.season} 已正式开服。X4 是 Java 版 + 基岩版互通生存周目，带有跨版本支持，可以容许一定范围内的版本跨度。
+OWL Server ${data.season} 已正式开服。X4 是 Java 版 + 基岩版互通生存周目，带有跨版本支持，可以允许一定范围内的版本跨度。
 
 ::: tip 欢迎回家
 
@@ -197,9 +200,9 @@ ${data.economy.principle}
 
 ## 基础汇率
 
-\`\`\`text
-${data.economy.rate}
-\`\`\`
+| 项目 | 数值 |
+|---|---:|
+| 赞助换算 | ${data.economy.rate} |
 
 ## 金币获取
 
