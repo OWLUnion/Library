@@ -9,9 +9,6 @@ actions:
   - text: 加入服务器
     type: primary
     link: /play/
-  - text: 运营控制台
-    type: secondary
-    link: /owl-x4-app/
   - text: 了解服务器
     type: secondary
     link: /wiki/OWL-Server.html
@@ -43,7 +40,6 @@ X4 是 Java + 基岩互通生存服，并带有跨版本支持。
 | 你想做什么 | 入口 |
 |---|---|
 | 立刻进服 | [加入服务器](/play/) |
-| 生成宣传文案和运营清单 | [运营控制台](/owl-x4-app/) |
 | 了解 OWL 和 X4 当前信息 | [了解服务器](/wiki/OWL-Server.html) |
 | 查看金币、领地、飞行等规则 | [经济系统](/wiki/OWL-Economy.html) |
 | 查看赞助与支出 | [资金明细](/finance/) |
