@@ -1,62 +1,43 @@
-import { readFile, writeFile } from 'node:fs/promises'
+import { writeFile } from 'node:fs/promises'
+import { resolve } from 'node:path'
 
-const dataPath = new URL('../docs/.vuepress/serverData/owl-x4.json', import.meta.url)
-const readmePath = new URL('../docs/README.md', import.meta.url)
-const playPath = new URL('../docs/play/README.md', import.meta.url)
-const serverPath = new URL('../docs/wiki/OWL-Server.md', import.meta.url)
-const statusPath = new URL('../docs/wiki/OWL-Server-X4.md', import.meta.url)
-const economyPath = new URL('../docs/wiki/OWL-Economy.md', import.meta.url)
+const root = process.cwd()
 
-const data = JSON.parse(await readFile(dataPath, 'utf8'))
-const generatedAt = new Date().toISOString().slice(0, 10)
+const readmePath = resolve(root, 'docs/README.md')
+const playPath = resolve(root, 'docs/play/README.md')
+const serverPath = resolve(root, 'docs/wiki/OWL-Server.md')
+const x4Path = resolve(root, 'docs/wiki/OWL-Server-X4.md')
 
-async function fetchStatus() {
-  const url = `https://api.mcsrvstat.us/bedrock/3/${data.address}:${data.bedrockPort}`
-  try {
-    const response = await fetch(url, {
-      headers: { 'User-Agent': 'OWL Library server page updater' }
-    })
-    if (!response.ok) return null
-    return await response.json()
-  } catch {
-    return null
-  }
+const data = {
+  javaHost: 'kupars.top',
+  javaPort: '35565',
+  javaVersion: '1.21.8 ~ 1.21.11 以及附近版本',
+  bedrockHost: 'kupars.top',
+  bedrockPort: '39132',
+  bedrockVersion: '26.3 以及附近版本',
+  currentLoop: 'X4',
+  tagline: '一个正在发展中的互通养老生存服，主打主城共建、轻经济和长期社区建设。 金币可以买便利，不能买无敌。',
+  features: [
+    'Java 与基岩互通，手机和电脑都可以加入。',
+    '有跨版本支持，可容许一定范围内的版本跨度。',
+    '主打生存、养老、主城共建和玩家社区。',
+    '金币主要用于飞行、领地、公寓、传送和装饰。',
+    '不出售 OP、创造、神装、常驻飞行和破坏平衡的权限。',
+    '重要变更会尽量沉淀到 OWL Library，避免信息只散落在聊天记录里。'
+  ]
 }
-
-function statusBlock(status) {
-  if (!status) return '服务器公开状态暂时无法获取。'
-  if (!status.online) return '服务器公开状态：离线或暂时无法从状态接口访问。'
-
-  const players = status.players
-    ? `${status.players.online ?? 0}/${status.players.max ?? '?'}`
-    : '未知'
-  const version = status.version || status.protocol?.name || '未知'
-  const motd = status.motd?.clean?.filter(Boolean).join(' / ') || '未设置'
-
-  return [
-    '服务器公开状态：在线',
-    `在线人数：${players}`,
-    `版本：${version}`,
-    `MOTD：${motd}`
-  ].join('\n\n')
-}
-
-const statusText = statusBlock(await fetchStatus())
 
 await writeFile(readmePath, `---
 home: true
 heroImage: /assets/世界旗/0.png
 heroText: OWL Library
-tagline: "${data.slogan}"
+tagline: "自由，开放，平等，互爱。"
 sidebar: true
 title: OWL Library
 actions:
   - text: 加入服务器
     type: primary
     link: /play/
-  - text: 运营控制台
-    type: secondary
-    link: /owl-x4-app/
   - text: 了解服务器
     type: secondary
     link: /wiki/OWL-Server.html
@@ -74,12 +55,12 @@ footer: MIT Licensed | Copyright © 2023-至今 OWL Union
 
 OWL Library 是 OWL Server 的公开知识库。这里整理服务器加入方式、当前周目、经济系统、公告、资金明细和历史资料。
 
-::: tip OWL Server X4 已开服
+::: tip OWL Server ${data.currentLoop} 已开服
 
-Java 版：\`${data.address}:${data.javaPort}\`  
-基岩版：\`${data.address}:${data.bedrockPort}\`
+Java 版：\`${data.javaHost}:${data.javaPort}\`  
+基岩版：\`${data.bedrockHost}:${data.bedrockPort}\`
 
-X4 是 Java + 基岩互通生存服，并带有跨版本支持。
+${data.currentLoop} 是 Java + 基岩互通生存服，并带有跨版本支持。
 
 :::
 
@@ -88,24 +69,23 @@ X4 是 Java + 基岩互通生存服，并带有跨版本支持。
 | 你想做什么 | 入口 |
 |---|---|
 | 立刻进服 | [加入服务器](/play/) |
-| 生成宣传文案和运营清单 | [运营控制台](/owl-x4-app/) |
-| 了解 OWL 和 X4 当前信息 | [了解服务器](/wiki/OWL-Server.html) |
+| 了解 OWL 和 ${data.currentLoop} 当前信息 | [了解服务器](/wiki/OWL-Server.html) |
 | 查看金币、领地、飞行等规则 | [经济系统](/wiki/OWL-Economy.html) |
 | 查看赞助与支出 | [资金明细](/finance/) |
 
-## OWL X4 一句话
+## OWL ${data.currentLoop} 一句话
 
-${data.oneLine} 金币可以买便利，不能买无敌。
+${data.tagline}
 `)
 
 await writeFile(playPath, `# 加入服务器
 
-OWL Server 当前运行周目为 **${data.season}**。X4 是 Java 版 + 基岩版互通服务器，并带有跨版本支持，可以允许一定范围内的版本跨度。
+OWL Server 当前运行周目为 **${data.currentLoop}**。${data.currentLoop} 是 Java 版 + 基岩版互通服务器，并带有跨版本支持，可以允许一定范围内的版本跨度。
 
 ::: tip 快速加入
 
-Java 版直连：\`${data.address}:${data.javaPort}\`  
-基岩版地址：\`${data.address}\`，端口：\`${data.bedrockPort}\`
+Java 版直连：\`${data.javaHost}:${data.javaPort}\`  
+基岩版地址：\`${data.bedrockHost}\`，端口：\`${data.bedrockPort}\`
 
 :::
 
@@ -113,10 +93,10 @@ Java 版直连：\`${data.address}:${data.javaPort}\`
 
 | 版本 | 地址 | 端口 | 支持版本 |
 |---|---|---:|---|
-| Java 版 | \`${data.address}\` | \`${data.javaPort}\` | \`${data.javaVersion}\` |
-| 基岩版 | \`${data.address}\` | \`${data.bedrockPort}\` | \`${data.bedrockVersion}\` |
+| Java 版 | \`${data.javaHost}\` | \`${data.javaPort}\` | \`${data.javaVersion}\` |
+| 基岩版 | \`${data.bedrockHost}\` | \`${data.bedrockPort}\` | \`${data.bedrockVersion}\` |
 
-**[基岩版一键导入](${data.joinUrl})**
+**[基岩版一键导入](minecraft://?addExternalServer=%C2%A7l%C2%A7bOWL%20%C2%A7aServer%C2%A7r|${data.bedrockHost}:${data.bedrockPort})**
 
 ## 第一次进入后做什么
 
@@ -135,11 +115,11 @@ Java 版直连：\`${data.address}:${data.javaPort}\`
 
 await writeFile(serverPath, `# 了解服务器
 
-OWL Server 是一个以“${data.slogan.replace('。', '')}”为理念的 Minecraft 社区服务器。当前运行周目为 **${data.name} ${data.season}**，定位为 ${data.type}，主打养老生存、主城共建、轻经济和长期社区建设。
+OWL Server 是一个以“自由、开放、平等、互爱”为理念的 Minecraft 社区服务器。当前运行周目为 **OWL Server ${data.currentLoop}**，定位为 Java + 基岩互通生存服，主打养老生存、主城共建、轻经济和长期社区建设。
 
 ::: tip 当前周目
 
-${data.name} ${data.season} 已正式开服。Java 版可通过 \`${data.address}:${data.javaPort}\` 加入，基岩版可通过 \`${data.address}:${data.bedrockPort}\` 加入。
+OWL Server ${data.currentLoop} 已正式开服。Java 版可通过 \`${data.javaHost}:${data.javaPort}\` 加入，基岩版可通过 \`${data.bedrockHost}:${data.bedrockPort}\` 加入。
 
 :::
 
@@ -153,28 +133,22 @@ ${data.name} ${data.season} 已正式开服。Java 版可通过 \`${data.address
 | 经济 | 金币用于便利、建筑辅助、领地、公寓、传送和装饰 |
 | 底线 | 不出售 OP、创造、神装、常驻飞行等破坏平衡的权限 |
 
-## X4 当前信息
+## ${data.currentLoop} 当前信息
 
 | 项目 | 内容 |
 |---|---|
-| 当前周目 | ${data.season} |
-| 服务器类型 | ${data.type} |
-| Java 版 | \`${data.address}:${data.javaPort}\` |
-| Java 版版本 | \`${data.javaVersion}\` |
-| 基岩版地址 | \`${data.address}\` |
+| 当前周目 | ${data.currentLoop} |
+| 服务器类型 | Java + 基岩互通生存服 |
+| Java 版 | \`${data.javaHost}:${data.javaPort}\` |
+| Java 版版本 | \`${data.javaVersion.replace(' 以及附近版本', '')}\` 以及附近版本 |
+| 基岩版地址 | \`${data.bedrockHost}\` |
 | 基岩版端口 | \`${data.bedrockPort}\` |
-| 基岩版版本 | \`${data.bedrockVersion}\` |
-| 核心理念 | ${data.slogan} |
+| 基岩版版本 | \`${data.bedrockVersion.replace(' 以及附近版本', '')}\` 以及附近版本 |
+| 核心理念 | 自由，开放，平等，互爱 |
 
-## 公开状态
+## ${data.currentLoop} 适合谁
 
-${statusText}
-
-最后自动检查：${generatedAt}
-
-## X4 适合谁
-
-如果你希望找一个节奏慢一点、能长期建设、能参与服务器成长的小型社区，X4 会比较适合你。这里不是以人数堆叠为第一目标，而是希望留下真正愿意一起建设服务器的人。
+如果你希望找一个节奏慢一点、能长期建设、能参与服务器成长的小型社区，${data.currentLoop} 会比较适合你。这里不是以人数堆叠为第一目标，而是希望留下真正愿意一起建设服务器的人。
 
 如果你更想找高强度 PvP、开局即满配、夸张礼包、强付费能力或超大规模商业化快餐服，这里大概率不是最合适的选择。
 
@@ -193,7 +167,6 @@ ${data.features.map((feature) => `- ${feature}`).join('\n')}
 ## 快速入口
 
 - [加入服务器](/play/)
-- [运营控制台](/owl-x4-app/)
 - [OWL 经济系统](/wiki/OWL-Economy.html)
 - [资金明细](/finance/)
 
@@ -203,97 +176,18 @@ ${data.features.map((feature) => `- ${feature}`).join('\n')}
 
 ## 历史资料
 
-旧周目的资料、纪念内容和存档下载会继续保留在 OWL Library 中。当前页面会集中维护 OWL Server 与 X4 的核心信息，避免新玩家在多个相似页面之间来回查找。
+旧周目的资料、纪念内容和存档下载会继续保留在 OWL Library 中。当前页面会集中维护 OWL Server 与 ${data.currentLoop} 的核心信息，避免新玩家在多个相似页面之间来回查找。
 `)
 
-await writeFile(statusPath, `# OWL Server ${data.season}
+await writeFile(x4Path, `# ${data.currentLoop} 现状
 
-::: tip 页面已合并
+该页面已并入 [了解服务器](/wiki/OWL-Server.html)。
 
-X4 现状已经合并到 [了解服务器](/wiki/OWL-Server.html)。那里会统一维护 OWL Server 的介绍、X4 当前信息、服务器特色和当前方向。
-
-:::
-
-## 快速入口
+如果你想看当前周目、加入方式、玩法定位、经济原则和服务器方向，请直接前往：
 
 - [了解服务器](/wiki/OWL-Server.html)
 - [加入服务器](/play/)
-- [OWL 经济系统](/wiki/OWL-Economy.html)
-
-保留这个页面是为了兼容旧链接，避免已经发布出去的 \`X4 现状\` 地址失效。
+- [经济系统](/wiki/OWL-Economy.html)
 `)
 
-await writeFile(economyPath, `# OWL 经济系统
-
-OWL 的金币系统用于维持服务器内的便利服务、领地、公寓、传送和装饰消费。
-
-::: tip 核心原则
-
-${data.economy.principle}
-
-:::
-
-## 基础汇率
-
-| 项目 | 数值 |
-|---|---:|
-| 赞助换算 | ${data.economy.rate} |
-
-## 金币获取
-
-| 来源 | 奖励 |
-|---|---:|
-| 每日签到 | ${data.economy.dailySign} |
-| 每日任务 | ${data.economy.dailyTask} |
-| 在线奖励 | ${data.economy.onlineReward} |
-| 在线奖励上限 | ${data.economy.onlineRewardLimit} |
-
-普通玩家每日免费获取${data.economy.dailyFreeIncome}。活动奖励可能额外发放，但会控制数量，避免金币通胀。
-
-## 主要消费
-
-| 项目 | 价格 |
-|---|---:|
-| 飞行 | ${data.economy.fly} |
-${data.economy.landPrices.map((item) => {
-  const [name, price] = item.split('：')
-  return `| ${name} | ${price} |`
-}).join('\n')}
-| 主城公寓 | 3000 金币 / 7 天 |
-
-## 传送收费
-
-| 类型 | 价格 |
-|---|---:|
-${data.economy.teleport.free.map((item) => `| \`${item}\` | 免费 |`).join('\n')}
-${data.economy.teleport.paid.map((item) => {
-  const [name, price] = item.split('：')
-  return `| ${name} | ${price} |`
-}).join('\n')}
-
-## 礼包与服务
-
-补给包和加强包均为 **7 天限购 1 次**。
-
-| 项目 | 价格范围 | 说明 |
-|---|---:|---|
-| 补给包 | 3000-6000 金币 | 食物、火把、基础工具、少量经验、建筑材料 |
-| 加强包 | 12000-15000 金币 | 修理券、装饰箱钥匙、飞行券、领地扩容券、称号外观 |
-
-## 不出售内容
-
-金币不直接出售以下内容：
-
-- OP 权限
-- 创造模式
-- 顶级装备
-- 常驻飞行
-- 大量稀有矿物
-- 破坏平衡的附魔或神器
-
-::: warning 调整说明
-
-经济系统会根据服务器活跃度、金币流通和玩家反馈继续调整。游戏内实际配置与本页面不一致时，请以游戏内公告和管理组说明为准。
-
-:::
-`)
+console.log('OWL server pages updated.')
