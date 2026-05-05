@@ -1,15 +1,9 @@
-# OWL Server X4
+# X4 现状
 
-::: tip 页面已合并
+该页面已并入 [了解服务器](/wiki/OWL-Server.html)。
 
-X4 现状已经合并到 [了解服务器](/wiki/OWL-Server.html)。那里会统一维护 OWL Server 的介绍、X4 当前信息、服务器特色和当前方向。
-
-:::
-
-## 快速入口
+如果你想看当前周目、加入方式、玩法定位、经济原则和服务器方向，请直接前往：
 
 - [了解服务器](/wiki/OWL-Server.html)
 - [加入服务器](/play/)
-- [OWL 经济系统](/wiki/OWL-Economy.html)
-
-保留这个页面是为了兼容旧链接，避免已经发布出去的 `X4 现状` 地址失效。
+- [经济系统](/wiki/OWL-Economy.html)
